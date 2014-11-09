@@ -11,14 +11,5 @@
 #import "BasicCoredataManager.h"
 
 @interface BasicContextManager : NSObject
-+ (instancetype)sharedInstance;
-
-+ (instancetype)alloc __attribute__((unavailable("alloc not available, call sharedInstance instead")));
-
-- (instancetype)init __attribute__((unavailable("init not available, call sharedInstance instead")));
-
-+ (instancetype)new __attribute__((unavailable("new not available, call sharedInstance instead")));
-
 @property (readwrite) NSManagedObjectContext *mainContext;
-- (NSManagedObjectContext *)getMainContext;
 @end

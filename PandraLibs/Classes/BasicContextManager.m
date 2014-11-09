@@ -13,9 +13,4 @@
     self.mainContext = [[BasicCoredataManager sharedInstance] managedObjectContext];
     return (BasicContextManager *) [super init];
 }
-
-- (NSManagedObjectContext *)getMainContext {
-    //lmAppDelegate *currentDelegate = (lmAppDelegate *) [[UIApplication sharedApplication] delegate];
-    return self.mainContext;
-}
 @end
