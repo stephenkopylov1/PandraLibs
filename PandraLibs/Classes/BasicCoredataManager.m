@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Pandra. All rights reserved.
 //
 
-#import "CoredataManager.h"
+#import "BasicCoredataManager.h"
 
-@implementation CoredataManager
+@implementation BasicCoredataManager
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
@@ -19,13 +19,13 @@ static id shared = nil;
 + (instancetype)sharedInstance {
     static dispatch_once_t pred;
     dispatch_once(&pred, ^{
-        shared = [(CoredataManager *) [super alloc] initUniqueInstance];
+        shared = [(BasicCoredataManager *) [super alloc] initUniqueInstance];
     });
     return shared;
 }
 
 - (instancetype)initUniqueInstance {
-    return (CoredataManager *) [super init];
+    return (BasicCoredataManager *) [super init];
 }
 
 -(void)resetAll{

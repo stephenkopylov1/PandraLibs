@@ -9,17 +9,8 @@
 #import "BasicContextManager.h"
 
 @implementation BasicContextManager
-static id shared = nil;
-+ (instancetype)sharedInstance {
-    static dispatch_once_t pred;
-    dispatch_once(&pred, ^{
-        shared = [(BasicContextManager *) [super alloc] initUniqueInstance];
-    });
-    return shared;
-}
-
-- (instancetype)initUniqueInstance {
-    self.mainContext = [[CoredataManager sharedInstance] managedObjectContext];
+- (instancetype)init {
+    self.mainContext = [[BasicCoredataManager sharedInstance] managedObjectContext];
     return (BasicContextManager *) [super init];
 }
 

@@ -21,7 +21,7 @@
 #import "BasicPostprocessor.h"
 #import "BasicSaver.h"
 #import "BasicSyncer.h"
-#import "CoredataManager.h"
+#import "BasicCoredataManager.h"
 #import "BasicProcessor.h"
 #import "CM.h"
 

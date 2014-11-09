@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "CoredataManager.h"
+#import "BasicCoredataManager.h"
 
 @interface BasicContextManager : NSObject
 + (instancetype)sharedInstance;

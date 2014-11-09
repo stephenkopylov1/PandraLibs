@@ -21,7 +21,7 @@
 		84C2A8F71A0FE34A00BE6045 /* BasicSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8E21A0FE34A00BE6045 /* BasicSaver.m */; };
 		84C2A8F81A0FE34A00BE6045 /* BasicSyncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8E41A0FE34A00BE6045 /* BasicSyncer.m */; };
 		84C2A8F91A0FE34A00BE6045 /* CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8E61A0FE34A00BE6045 /* CC.m */; };
-		84C2A8FA1A0FE34A00BE6045 /* CoredataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8E81A0FE34A00BE6045 /* CoredataManager.m */; };
+		84C2A8FA1A0FE34A00BE6045 /* BasicCoredataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8E81A0FE34A00BE6045 /* BasicCoredataManager.m */; };
 		84C2A8FB1A0FE34A00BE6045 /* DF.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8EA1A0FE34A00BE6045 /* DF.m */; };
 		84C2A8FC1A0FE34A00BE6045 /* MT.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8EC1A0FE34A00BE6045 /* MT.m */; };
 		84C2A8FD1A0FE34A00BE6045 /* PP.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8EF1A0FE34A00BE6045 /* PP.m */; };
@@ -74,8 +74,8 @@
 		84C2A8E41A0FE34A00BE6045 /* BasicSyncer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicSyncer.m; path = Classes/BasicSyncer.m; sourceTree = "<group>"; };
 		84C2A8E51A0FE34A00BE6045 /* CC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CC.h; path = Classes/CC.h; sourceTree = "<group>"; };
 		84C2A8E61A0FE34A00BE6045 /* CC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CC.m; path = Classes/CC.m; sourceTree = "<group>"; };
-		84C2A8E71A0FE34A00BE6045 /* CoredataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoredataManager.h; path = Classes/CoredataManager.h; sourceTree = "<group>"; };
-		84C2A8E81A0FE34A00BE6045 /* CoredataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoredataManager.m; path = Classes/CoredataManager.m; sourceTree = "<group>"; };
+		84C2A8E71A0FE34A00BE6045 /* BasicCoredataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCoredataManager.h; path = Classes/BasicCoredataManager.h; sourceTree = "<group>"; };
+		84C2A8E81A0FE34A00BE6045 /* BasicCoredataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCoredataManager.m; path = Classes/BasicCoredataManager.m; sourceTree = "<group>"; };
 		84C2A8E91A0FE34A00BE6045 /* DF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DF.h; path = Classes/DF.h; sourceTree = "<group>"; };
 		84C2A8EA1A0FE34A00BE6045 /* DF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DF.m; path = Classes/DF.m; sourceTree = "<group>"; };
 		84C2A8EB1A0FE34A00BE6045 /* MT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MT.h; path = Classes/MT.h; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 				84C2A8E21A0FE34A00BE6045 /* BasicSaver.m */,
 				84C2A8E31A0FE34A00BE6045 /* BasicSyncer.h */,
 				84C2A8E41A0FE34A00BE6045 /* BasicSyncer.m */,
-				84C2A8E71A0FE34A00BE6045 /* CoredataManager.h */,
-				84C2A8E81A0FE34A00BE6045 /* CoredataManager.m */,
+				84C2A8E71A0FE34A00BE6045 /* BasicCoredataManager.h */,
+				84C2A8E81A0FE34A00BE6045 /* BasicCoredataManager.m */,
 			);
 			name = coredata;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				84C2A8F51A0FE34A00BE6045 /* BasicMTContextProcessor.m in Sources */,
 				84C2A8FB1A0FE34A00BE6045 /* DF.m in Sources */,
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
-				84C2A8FA1A0FE34A00BE6045 /* CoredataManager.m in Sources */,
+				84C2A8FA1A0FE34A00BE6045 /* BasicCoredataManager.m in Sources */,
 				84C2A8F81A0FE34A00BE6045 /* BasicSyncer.m in Sources */,
 				84C2A9031A0FEAF700BE6045 /* BasicProcessor.m in Sources */,
 				84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */,
