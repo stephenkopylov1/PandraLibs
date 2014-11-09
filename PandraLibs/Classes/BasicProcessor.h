@@ -19,8 +19,6 @@
 @property (readwrite) BasicPostprocessor *postprocessor;
 
 -(void)processObjects:(id)objects withCallback:(void (^)(NSMutableArray *objects))callback;
--(void)processUsers:(id)objects withCallback:(void (^)(NSMutableArray *readyUsers))callback;
--(void)processPosts:(id)postsRaw withCallback:(void (^)(NSMutableArray *readyPosts))callback;
 -(NSMutableArray*)getObjectsFromIds:(NSMutableArray*)ids;
 -(void)linkObjectsWithIds:(NSMutableArray*)ids andCallback:(void (^)(NSMutableArray *ids))callback;
 @end
