@@ -5,12 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/PandraLibs.svg?style=flat)](http://cocoadocs.org/docsets/PandraLibs)
 [![Platform](https://img.shields.io/cocoapods/p/PandraLibs.svg?style=flat)](http://cocoadocs.org/docsets/PandraLibs)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 PandraLibs is available through [CocoaPods](http://cocoapods.org). To install
