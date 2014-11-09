@@ -25,6 +25,7 @@
 		84C2A8FB1A0FE34A00BE6045 /* DF.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8EA1A0FE34A00BE6045 /* DF.m */; };
 		84C2A8FC1A0FE34A00BE6045 /* MT.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8EC1A0FE34A00BE6045 /* MT.m */; };
 		84C2A8FD1A0FE34A00BE6045 /* PP.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8EF1A0FE34A00BE6045 /* PP.m */; };
+		84C2A9001A0FE9BF00BE6045 /* BasicProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8FF1A0FE9BF00BE6045 /* BasicProcessor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		84C2A8ED1A0FE34A00BE6045 /* PandraLibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PandraLibs.h; path = Classes/PandraLibs.h; sourceTree = "<group>"; };
 		84C2A8EE1A0FE34A00BE6045 /* PP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PP.h; path = Classes/PP.h; sourceTree = "<group>"; };
 		84C2A8EF1A0FE34A00BE6045 /* PP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PP.m; path = Classes/PP.m; sourceTree = "<group>"; };
+		84C2A8FE1A0FE9BF00BE6045 /* BasicProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicProcessor.h; sourceTree = "<group>"; };
+		84C2A8FF1A0FE9BF00BE6045 /* BasicProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicProcessor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 		845CFCEE1A0FDE52000A1A60 /* coredata */ = {
 			isa = PBXGroup;
 			children = (
+				84C2A8FE1A0FE9BF00BE6045 /* BasicProcessor.h */,
+				84C2A8FF1A0FE9BF00BE6045 /* BasicProcessor.m */,
 				84C2A8D41A0FE34A00BE6045 /* BasicContextManager.h */,
 				84C2A8D51A0FE34A00BE6045 /* BasicContextManager.m */,
 				84C2A8DB1A0FE34A00BE6045 /* BasicLinker.h */,
@@ -313,6 +318,7 @@
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
 				84C2A8FA1A0FE34A00BE6045 /* CoredataManager.m in Sources */,
 				84C2A8F81A0FE34A00BE6045 /* BasicSyncer.m in Sources */,
+				84C2A9001A0FE9BF00BE6045 /* BasicProcessor.m in Sources */,
 				84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */,
 				845CFCB11A0FDC19000A1A60 /* AppDelegate.m in Sources */,
 				84C2A8FC1A0FE34A00BE6045 /* MT.m in Sources */,
