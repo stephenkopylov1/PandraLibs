@@ -12,6 +12,11 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
++(NSDictionary *)getDictionaryWithId:(NSString*)id{
+    return [[NSUserDefaults standardUserDefaults] dictionaryForKey:id];
+}
+
+
 + (void)setCoockieWithCustomClassAndId:(NSString *)id andValue:(id)value {
     if (value != nil) {
         [[NSUserDefaults standardUserDefaults] rm_setCustomObject:value forKey:id];

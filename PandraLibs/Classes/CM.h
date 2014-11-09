@@ -13,5 +13,6 @@
 
 + (NSInteger)getIntegerCoockieWithId:(id)id;
 
++(NSDictionary *)getDictionaryWithId:(NSString*)id;
 
 @end
