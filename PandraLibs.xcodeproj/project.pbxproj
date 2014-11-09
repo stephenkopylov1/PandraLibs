@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8476B67F1A0FD54300B8BE76 /* Pod in Resources */ = {isa = PBXBuildFile; fileRef = 8476B67E1A0FD54300B8BE76 /* Pod */; };
+		8476B6811A0FD63400B8BE76 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 8476B6801A0FD63400B8BE76 /* Classes */; };
 		848C3DFE1A0FD419004C9699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3DFD1A0FD419004C9699 /* main.m */; };
-		848C3E011A0FD419004C9699 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3E001A0FD419004C9699 /* AppDelegate.m */; };
 		848C3E0C1A0FD419004C9699 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C3E0B1A0FD419004C9699 /* Images.xcassets */; };
 		848C3E1B1A0FD419004C9699 /* PandraLibsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3E1A1A0FD419004C9699 /* PandraLibsTests.m */; };
 /* End PBXBuildFile section */
@@ -25,12 +24,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8476B67E1A0FD54300B8BE76 /* Pod */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pod; path = PandraLibs/Pod; sourceTree = "<group>"; };
+		8476B6801A0FD63400B8BE76 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		848C3DF81A0FD419004C9699 /* PandraLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandraLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848C3DFC1A0FD419004C9699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848C3DFD1A0FD419004C9699 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		848C3DFF1A0FD419004C9699 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		848C3E001A0FD419004C9699 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		848C3E0B1A0FD419004C9699 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		848C3E141A0FD419004C9699 /* PandraLibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandraLibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848C3E191A0FD419004C9699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		848C3DEF1A0FD419004C9699 = {
 			isa = PBXGroup;
 			children = (
-				8476B67E1A0FD54300B8BE76 /* Pod */,
 				848C3DFA1A0FD419004C9699 /* PandraLibs */,
 				848C3E171A0FD419004C9699 /* PandraLibsTests */,
 				848C3DF91A0FD419004C9699 /* Products */,
@@ -77,8 +73,7 @@
 		848C3DFA1A0FD419004C9699 /* PandraLibs */ = {
 			isa = PBXGroup;
 			children = (
-				848C3DFF1A0FD419004C9699 /* AppDelegate.h */,
-				848C3E001A0FD419004C9699 /* AppDelegate.m */,
+				8476B6801A0FD63400B8BE76 /* Classes */,
 				848C3E0B1A0FD419004C9699 /* Images.xcassets */,
 				848C3DFB1A0FD419004C9699 /* Supporting Files */,
 			);
@@ -191,8 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8476B67F1A0FD54300B8BE76 /* Pod in Resources */,
 				848C3E0C1A0FD419004C9699 /* Images.xcassets in Resources */,
+				8476B6811A0FD63400B8BE76 /* Classes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848C3E011A0FD419004C9699 /* AppDelegate.m in Sources */,
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
