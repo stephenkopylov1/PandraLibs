@@ -21,17 +21,13 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Stephen Kopylov" => "sk@pandra.ru" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PandraLibs.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/stephenkopylov/PandraLibs.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'PandraLibs/Pod/Classes'
+  s.source_files = 'PandraLibs/Classes'
 
-    s.subspec 'ConfigManager' do |cm|
-    cm.source_files   = 'configManager/*'
-  end
   s.resource_bundles = {
     'PandraLibs' => ['Pod/Assets/*.png']
   }
