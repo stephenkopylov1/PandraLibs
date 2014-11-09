@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PandraLibs"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Frequently used utilits and libraries for Pandra's projects"
   s.description      = <<-DESC
                         Frequently used utilits and libraries for Pandra's projects.

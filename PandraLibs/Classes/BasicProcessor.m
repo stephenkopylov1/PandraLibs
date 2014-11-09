@@ -14,7 +14,7 @@
 -(NSMutableArray*)getObjectsFromIds:(NSMutableArray*)ids{
     NSMutableArray *readyObjects = [[NSMutableArray alloc] init];
     for (int i = 0; i<ids.count; i++) {
-        NSManagedObject *currUser = [[[BasicContextManager sharedInstance] getMainContext] objectWithID:ids[i]];
+        NSManagedObject *currUser = [[[BasicCoredataManager sharedInstance] managedObjectContext] objectWithID:ids[i]];
         [readyObjects addObject:currUser];
     }
     return readyObjects;
