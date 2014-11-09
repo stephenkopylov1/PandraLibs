@@ -2,37 +2,34 @@
 
 
 @implementation CM
-- (instancetype)init {
-    return (CM *) [super init];
-}
 
-- (NSString *)getCoockieWithId:(id)id {
++ (NSString *)getCoockieWithId:(id)id {
     return [[NSUserDefaults standardUserDefaults] stringForKey:id];
 }
 
-- (void)setCoockieWithId:(NSString *)id andValue:(id)value {
++ (void)setCoockieWithId:(NSString *)id andValue:(id)value {
     [[NSUserDefaults standardUserDefaults] setObject:value forKey:id];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (void)setCoockieWithCustomClassAndId:(NSString *)id andValue:(id)value {
++ (void)setCoockieWithCustomClassAndId:(NSString *)id andValue:(id)value {
     if (value != nil) {
         [[NSUserDefaults standardUserDefaults] rm_setCustomObject:value forKey:id];
     }
 }
 
-- (id)getCoockieWithCustomClassAndId:(NSString *)id {
++ (id)getCoockieWithCustomClassAndId:(NSString *)id {
     return [[NSUserDefaults standardUserDefaults] rm_customObjectForKey:id];
 }
 
-- (void)clearAllCoockies {
++ (void)clearAllCoockies {
     NSString *domainName = [[NSBundle mainBundle] bundleIdentifier];
     [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:domainName];
 
 }
 
 //метод возвращает количество вызовов приложения
-- (NSInteger)getIntegerCoockieWithId:(id)id {
++ (NSInteger)getIntegerCoockieWithId:(id)id {
     return [[NSUserDefaults standardUserDefaults] integerForKey:id];
 }
 

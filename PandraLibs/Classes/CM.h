@@ -3,15 +3,15 @@
 
 @interface CM : NSObject
 
-- (NSString *)getCoockieWithId:(id)id;
++ (NSString *)getCoockieWithId:(id)id;
 
-- (void)setCoockieWithId:(NSString *)id andValue:(id)value;
++ (void)setCoockieWithId:(NSString *)id andValue:(id)value;
 
-- (void)setCoockieWithCustomClassAndId:(NSString *)id andValue:(id)value;
++ (void)setCoockieWithCustomClassAndId:(NSString *)id andValue:(id)value;
 
-- (id)getCoockieWithCustomClassAndId:(NSString *)id;
++ (id)getCoockieWithCustomClassAndId:(NSString *)id;
 
--(NSInteger)getIntegerCoockieWithId:(id)id;
++ (NSInteger)getIntegerCoockieWithId:(id)id;
 
 
 @end
