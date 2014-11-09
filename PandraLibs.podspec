@@ -9,13 +9,10 @@
 
 Pod::Spec.new do |s|
   s.name             = "PandraLibs"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "Frequently used utilits and libraries for Pandra's projects"
   s.description      = <<-DESC
-                       An optional longer description of PandraLibs
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                        Frequently used utilits and libraries for Pandra's projects.
                        DESC
   s.homepage         = "https://github.com/stephenkopylov/PandraLibs"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
