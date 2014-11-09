@@ -24,6 +24,8 @@
 #import "BasicCoredataManager.h"
 #import "BasicProcessor.h"
 #import "CM.h"
+#import "TD.h"
+#import "IP.h"
 
 @interface PandraLibs : NSObject
 
