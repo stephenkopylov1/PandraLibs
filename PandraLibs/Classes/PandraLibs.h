@@ -22,6 +22,7 @@
 #import "BasicSaver.h"
 #import "BasicSyncer.h"
 #import "CoredataManager.h"
+#import "BasicProcessor.h"
 
 @interface PandraLibs : NSObject
 
