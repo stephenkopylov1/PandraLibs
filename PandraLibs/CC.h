@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CC : NSObject
 + (UIColor *)colorFromHexString:(NSString *)hexString;

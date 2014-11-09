@@ -7,12 +7,13 @@
 //
 
 #import "BasicMTContextProcessor.h"
+#import "BasicContextManager.h"
 
 @implementation BasicMTContextProcessor
 -(void)startMultithreadContextOperationWithCallback:(void (^)(NSMutableArray *ids))callback{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-        [context setParentContext:[[[ManagersFactory sharedInstance] contextManager] getMainContext]];
+        [context setParentContext:[[BasicContextManager sharedInstance] getMainContext]];
         NSMutableArray *ids = [self performOperationInContext:context];
         [self saveContext:context withCallback:^{
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -30,9 +31,9 @@
     {
         NSLog(@"error saving context %@",error);
     }
-    [[[[ManagersFactory sharedInstance] contextManager] getMainContext] performBlock:^{
+    [[[BasicContextManager sharedInstance] getMainContext] performBlock:^{
         NSError *error;
-        if (![[[[ManagersFactory sharedInstance] contextManager] getMainContext] save:&error])
+        if (![[[BasicContextManager sharedInstance] getMainContext] save:&error])
         {
             NSLog(@"error saving main context %@",error);
         }else{

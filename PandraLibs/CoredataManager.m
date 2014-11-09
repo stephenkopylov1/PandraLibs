@@ -13,10 +13,22 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
-//----- coredata
+
+static id shared = nil;
+
++ (instancetype)sharedInstance {
+    static dispatch_once_t pred;
+    dispatch_once(&pred, ^{
+        shared = [(CoredataManager *) [super alloc] initUniqueInstance];
+    });
+    return shared;
+}
+
+- (instancetype)initUniqueInstance {
+    return (CoredataManager *) [super init];
+}
 
 -(void)resetAll{
-    NSLog(@"resetAllCoreadata");
     _managedObjectContext = nil;
     _managedObjectModel = nil;
     _persistentStoreCoordinator = nil;

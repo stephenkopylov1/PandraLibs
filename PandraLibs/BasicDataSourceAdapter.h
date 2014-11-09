@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "BasicDataSourceDelegate.h"
 #import "BasicCollectionView.h"
+#import <UIKit/UIKit.h>
+
 @class BasicDataSource;
 
 @interface BasicDataSourceAdapter : NSObject <UICollectionViewDelegate,UICollectionViewDataSource,BasicDataSourceDelegate>

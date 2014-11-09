@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PandraLibs.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
