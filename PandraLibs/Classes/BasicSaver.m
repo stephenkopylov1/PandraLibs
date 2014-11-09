@@ -11,6 +11,11 @@
 @implementation BasicSaver{
     NSMutableArray* objectsForSave;
 }
+-(instancetype)init{
+    self.syncer = [BasicSyncer sharedInstance];
+    return [super init];
+}
+
 -(void)saveObjects:(id)objects withCallback:(void (^)(NSMutableArray *ids))callback{
     objectsForSave = objects;
     [self startMultithreadContextOperationWithCallback:^(NSMutableArray *ids) {

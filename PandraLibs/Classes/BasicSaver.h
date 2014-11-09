@@ -8,8 +8,9 @@
 
 
 #import "BasicMTContextProcessor.h"
-
+#import "BasicSyncer.h"
 @interface BasicSaver : BasicMTContextProcessor
+@property (readwrite) BasicSyncer *syncer;
 -(void)saveObjects:(id)objects withCallback:(void (^)(NSMutableArray *ids))callback;
 -(NSMutableArray*)performSaving:(id)objects inContext:(NSManagedObjectContext*)context;
 @end
