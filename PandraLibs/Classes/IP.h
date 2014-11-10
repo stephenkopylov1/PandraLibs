@@ -4,8 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
+#import <UIKit/UIKit.h>
 @interface IP : NSObject
 + (UIImage *)imageNamed:(NSString *)name withTintColor:(UIColor *)tintColor;
 @end

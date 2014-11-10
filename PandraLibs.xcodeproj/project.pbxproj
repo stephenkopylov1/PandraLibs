@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C4D97671A10A8C5005FD0BE /* TD.h in Sources */ = {isa = PBXBuildFile; fileRef = 84F1AE321A0FFF6B007CAA64 /* TD.h */; };
+		4C4D97681A10A8CC005FD0BE /* TD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F1AE331A0FFF6B007CAA64 /* TD.m */; };
 		845CFCB11A0FDC19000A1A60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CFCB01A0FDC19000A1A60 /* AppDelegate.m */; };
 		848C3DFE1A0FD419004C9699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3DFD1A0FD419004C9699 /* main.m */; };
 		848C3E0C1A0FD419004C9699 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C3E0B1A0FD419004C9699 /* Images.xcassets */; };
@@ -27,7 +29,6 @@
 		84C2A8FD1A0FE34A00BE6045 /* PP.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8EF1A0FE34A00BE6045 /* PP.m */; };
 		84C2A9031A0FEAF700BE6045 /* BasicProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A9021A0FEAF700BE6045 /* BasicProcessor.m */; };
 		84C2A9091A0FED6400BE6045 /* CM.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A9081A0FED6400BE6045 /* CM.m */; };
-		84F1AE341A0FFF6B007CAA64 /* TD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F1AE331A0FFF6B007CAA64 /* TD.m */; };
 		84F1AE371A0FFF70007CAA64 /* IP.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F1AE361A0FFF70007CAA64 /* IP.m */; };
 		9A3C048B5F47D05C716EA268 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 084F732815BFD4EECB13D174 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -383,12 +384,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4D97681A10A8CC005FD0BE /* TD.m in Sources */,
+				4C4D97671A10A8C5005FD0BE /* TD.h in Sources */,
 				84F1AE371A0FFF70007CAA64 /* IP.m in Sources */,
 				84C2A8F21A0FE34A00BE6045 /* BasicDataSource.m in Sources */,
 				84C2A8F41A0FE34A00BE6045 /* BasicLinker.m in Sources */,
 				84C2A8F31A0FE34A00BE6045 /* BasicDataSourceAdapter.m in Sources */,
 				84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */,
-				84F1AE341A0FFF6B007CAA64 /* TD.m in Sources */,
 				84C2A8F51A0FE34A00BE6045 /* BasicMTContextProcessor.m in Sources */,
 				84C2A8FB1A0FE34A00BE6045 /* DF.m in Sources */,
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
