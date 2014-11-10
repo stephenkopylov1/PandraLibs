@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/PandraLibs.svg?style=flat)](http://cocoadocs.org/docsets/PandraLibs)
 [![Platform](https://img.shields.io/cocoapods/p/PandraLibs.svg?style=flat)](http://cocoadocs.org/docsets/PandraLibs)
 
+## About
+
+Frequently used utilits and libraries for Pandra's projects
+
 ## Installation
 
 PandraLibs is available through [CocoaPods](http://cocoapods.org). To install
