@@ -8,7 +8,6 @@
 
 #import "BasicMTContextProcessor.h"
 
-@interface BasicPostprocessor : BasicMTContextProcessor
--(void)processObjects:(id)objects withCallback:(void (^)(NSMutableArray *ids))callback;
--(NSMutableArray*)performPostprocessOperation:(NSMutableArray*)ids inContext:(NSManagedObjectContext*)context;
+@interface BasicPostprocessor : NSObject
+-(NSMutableArray*)postprocessObjects:(NSMutableArray*)ids inContext:(NSManagedObjectContext*)context;
 @end

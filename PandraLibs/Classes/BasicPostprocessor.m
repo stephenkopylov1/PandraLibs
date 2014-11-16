@@ -8,20 +8,8 @@
 
 #import "BasicPostprocessor.h"
 
-@implementation BasicPostprocessor{
-    NSMutableArray *objectsForProcess;
-}
-
--(void)processObjects:(id)objects withCallback:(void (^)(NSMutableArray *ids))callback{
-    objectsForProcess = objects;
-    [self startMultithreadContextOperationWithCallback:^(NSMutableArray *ids) {
-        callback(ids);
-    }];
-}
--(NSMutableArray *)performOperationInContext:(NSManagedObjectContext *)context{
-      return [self performPostprocessOperation:objectsForProcess inContext:context];
-}
--(NSMutableArray*)performPostprocessOperation:(NSMutableArray*)ids inContext:(NSManagedObjectContext*)context{
-    return nil;
+@implementation BasicPostprocessor
+-(NSMutableArray *)postprocessObjects:(NSMutableArray *)ids inContext:(NSManagedObjectContext *)context{
+    return ids;
 }
 @end

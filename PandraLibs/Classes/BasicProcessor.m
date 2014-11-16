@@ -19,10 +19,4 @@
     }
     return readyObjects;
 }
--(void)linkObjectsWithIds:(NSMutableArray*)ids andCallback:(void (^)(NSMutableArray *ids))callback
-{
-    [self.linker linkObjects:ids withCallback:^(NSMutableArray *ids) {
-        callback(ids);
-    }];
-}
 @end

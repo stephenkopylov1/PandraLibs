@@ -10,6 +10,5 @@
 #import "BasicMTContextProcessor.h"
 
 @interface BasicLinker : BasicMTContextProcessor
--(void)linkObjects:(id)objects withCallback:(void (^)(NSMutableArray *ids))callback;
--(NSMutableArray*)performLinking:(id)objects inContext:(NSManagedObjectContext*)context;
+-(NSMutableArray*)linkObjects:(NSMutableArray*)ids inContext:(NSManagedObjectContext*)context;
 @end
