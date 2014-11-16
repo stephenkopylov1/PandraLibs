@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "BasicMTContextProcessor.h"
 
-@interface BasicLinker : BasicMTContextProcessor
+@interface BasicLinker : NSObject
 -(NSMutableArray*)linkObjects:(NSMutableArray*)ids inContext:(NSManagedObjectContext*)context;
 @end
