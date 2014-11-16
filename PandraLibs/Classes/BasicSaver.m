@@ -13,6 +13,8 @@
 }
 -(instancetype)init{
     self.syncer = [BasicSyncer sharedInstance];
+    self.linker = [[BasicLinker alloc] init];
+    self.postprocessor = [[BasicPostprocessor alloc] init];
     return [super init];
 }
 
@@ -24,7 +26,7 @@
 }
 
 -(NSMutableArray *)performOperationInContext:(NSManagedObjectContext *)context{
-    return [self performSaving:objectsForSave inContext:context];
+    return [self.postprocessor postprocessObjects:[self.linker linkObjects:[self performSaving:objectsForSave inContext:context] inContext:context] inContext:context];
 }
 
 -(NSMutableArray*)performSaving:(id)objects inContext:(NSManagedObjectContext*)context{
