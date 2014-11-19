@@ -26,6 +26,7 @@
 #import "CM.h"
 #import "TD.h"
 #import "IP.h"
+#import "BasicSharingManager.h"
 
 @interface PandraLibs : NSObject
 

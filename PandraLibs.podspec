@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PandraLibs"
-  s.version          = "0.1.6"
+  s.version          = "0.1.7"
   s.summary          = "Frequently used utilits and libraries for Pandra's projects"
   s.description      = <<-DESC
                         Frequently used utilits and libraries for Pandra's projects.
@@ -33,4 +33,7 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'RMMapper'
+  s.dependency  'ShareKit/Facebook'
+  s.dependency  'ShareKit/Vkontakte'
+  s.dependency  'ShareKit/Twitter'
 end

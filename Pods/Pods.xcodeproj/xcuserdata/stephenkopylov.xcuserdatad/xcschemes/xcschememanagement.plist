@@ -4,25 +4,115 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Facebook-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PKMultipartInputStream.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RMMapper.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SAMTextView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UIActivityIndicator-for-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8A3767CF9E72F805C43A34DD</key>
+		<key>02A5D9B26CF036A98A25930D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8D66F37C4CB4DBEB521E48D</key>
+		<key>0681CD07B71D5EF11ECF1863</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23E9A86E6BC13FE3DBD6F6F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2ADA0F60D31654D6395BAD46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5753B98581CFC20FBD3DEC1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>638840E95B3F185384B20375</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BC3438C8F2CB15FF64925A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>871B765C89A6F67B5B73B0F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE1AFB4A58E2D6BFC9085AD7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7391244E1259467C91C60DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB6F483398BDB109685DD629</key>
 		<dict>
 			<key>primary</key>
 			<true/>
