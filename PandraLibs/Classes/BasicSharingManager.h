@@ -10,6 +10,7 @@
 #import <ShareKit/SHKFacebook.h>
 #import <ShareKit/SHKVkontakte.h>
 #import <ShareKit/SHKTwitter.h>
+#import <ShareKit/ShareKit.h>
 
 
 

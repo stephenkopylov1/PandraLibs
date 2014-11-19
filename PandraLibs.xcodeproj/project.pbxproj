@@ -118,13 +118,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CD6E88F1A1CFC91000BBD5D /* Sharer */ = {
+		4CD6E88F1A1CFC91000BBD5D /* sharing */ = {
 			isa = PBXGroup;
 			children = (
 				4CD6E8901A1CFCAB000BBD5D /* BasicSharingManager.h */,
 				4CD6E8911A1CFCAB000BBD5D /* BasicSharingManager.m */,
 			);
-			name = Sharer;
+			name = sharing;
 			sourceTree = "<group>";
 		};
 		60B548A62299B6463E2B9F92 /* Frameworks */ = {
@@ -216,7 +216,7 @@
 		848C3DFA1A0FD419004C9699 /* PandraLibs */ = {
 			isa = PBXGroup;
 			children = (
-				4CD6E88F1A1CFC91000BBD5D /* Sharer */,
+				4CD6E88F1A1CFC91000BBD5D /* sharing */,
 				84C2A8ED1A0FE34A00BE6045 /* PandraLibs.h */,
 				845CFCF01A0FDE7A000A1A60 /* utilits */,
 				845CFCEF1A0FDE6B000A1A60 /* lists */,
