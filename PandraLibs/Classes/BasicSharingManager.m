@@ -24,7 +24,6 @@
 }
 
 - (void)sharerAuthorized:(NSNotification *)notification {
-    NSLog(@"sharerAuthorized");
     if (sharing) {
         sharing = false;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
@@ -51,20 +50,27 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSLog(@"actionSheet  clickedButtonAtIndex %d",buttonIndex);
-    switch (buttonIndex) {
-        case 0:
-            [self shareItem:currentItem inSocialNetwork:SharingNetworkTypeFacebook];
-            break;
-        case 1:
-            [self shareItem:currentItem inSocialNetwork:SharingNetworkTypeTwitter];
-            break;
-        case 2:
-            [self shareItem:currentItem inSocialNetwork:SharingNetworkTypeVk];
-            break;
-        default:
-            break;
+    int delayTime = 0;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        delayTime = 1;
     }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delayTime * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        
+        switch (buttonIndex) {
+            case 0:
+                [self shareItem:currentItem inSocialNetwork:SharingNetworkTypeFacebook];
+                break;
+            case 1:
+                [self shareItem:currentItem inSocialNetwork:SharingNetworkTypeTwitter];
+                break;
+            case 2:
+                [self shareItem:currentItem inSocialNetwork:SharingNetworkTypeVk];
+                break;
+            default:
+                break;
+        }
+    });
 }
 
 -(void)shareItem:(SHKItem*)item inSocialNetwork:(SharingNetworkType)type{
