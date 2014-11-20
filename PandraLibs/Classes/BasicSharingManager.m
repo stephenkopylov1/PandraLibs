@@ -41,7 +41,13 @@
 
 - (void)showSelector {
     UIActionSheet *socialSelectorActionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Отмена" destructiveButtonTitle:nil otherButtonTitles:@"Facebook", @"Twitter",@"Vkontakte", nil];
-    [socialSelectorActionSheet showInView:[UIApplication sharedApplication].keyWindow];
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        [socialSelectorActionSheet showFromRect:CGRectMake([self topViewController].view.frame.size.width/2-100,10,200,0) inView:[self topViewController].view animated:YES];
+    }else{
+        
+        [socialSelectorActionSheet showInView:[UIApplication sharedApplication].keyWindow];
+    }
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -114,4 +120,22 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+
+- (UIViewController*)topViewController {
+    return [self topViewControllerWithRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+}
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController {
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController* tabBarController = (UITabBarController*)rootViewController;
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        return [self topViewControllerWithRootViewController:navigationController.visibleViewController];
+    } else if (rootViewController.presentedViewController) {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self topViewControllerWithRootViewController:presentedViewController];
+    } else {
+        return rootViewController;
+    }
+}
 @end
