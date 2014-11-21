@@ -10,7 +10,6 @@
 #import "BasicDataSourceDelegate.h"
 
 @implementation BasicDataSource
-@synthesize data = _data;
 -(void)registerCollectionView:(BasicCollectionView *)collectionView{
     NSLog(@"registerCollectionView");
     self.adapter = [self getAdapter];
@@ -24,11 +23,10 @@
     BasicDataSourceAdapter *adapter = [[BasicDataSourceAdapter alloc] init];
     return adapter;
 }
--(void)setData:(NSMutableArray *)data{
-    NSLog(@"setData = %@",data);
-    _data = data;
+-(void)setCurrentData:(NSMutableArray *)data{
+    self.data = data;
     if(self.delegate !=nil && [self.delegate respondsToSelector:@selector(dataChanged:)]){
-        [self.delegate dataChanged:_data];
+        [self.delegate dataChanged:self.data];
     }
 }
 @end

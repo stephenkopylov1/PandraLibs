@@ -16,4 +16,5 @@
 -(BasicDataSourceAdapter*)getAdapter;
 @property (strong,nonatomic) NSMutableArray *data;
 @property (nonatomic, weak) id <BasicDataSourceDelegate> delegate;
+-(void)setCurrentData:(NSMutableArray *)data;
 @end
