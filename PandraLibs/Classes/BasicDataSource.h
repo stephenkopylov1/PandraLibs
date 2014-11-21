@@ -14,6 +14,6 @@
 @property (readwrite) BasicDataSourceAdapter *adapter;
 -(void)registerCollectionView:(BasicCollectionView*)collectionView;
 -(BasicDataSourceAdapter*)getAdapter;
-@property (readwrite) NSMutableArray *data;
+@property (strong,nonatomic) NSMutableArray *data;
 @property (nonatomic, weak) id <BasicDataSourceDelegate> delegate;
 @end
