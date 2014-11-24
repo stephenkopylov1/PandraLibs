@@ -22,4 +22,5 @@ typedef NS_ENUM(NSInteger, SharingNetworkType) {
 
 @interface BasicSharingManager : NSObject<UIActionSheetDelegate>
 -(void)share:(SHKItem*)item;
+-(void)shareItem:(SHKItem*)item inSocialNetwork:(SharingNetworkType)type;
 @end
