@@ -12,7 +12,9 @@
 @implementation BasicDataSource
 -(void)registerCollectionView:(BasicCollectionView *)collectionView{
     NSLog(@"registerCollectionView");
-    self.adapter = [self getAdapter];
+    if(self.adapter==nil){
+        self.adapter = [self getAdapter];
+    }
     self.adapter.dataSource = self;
     [self.adapter registerCollectionView:collectionView];
     self.delegate = self.adapter;
