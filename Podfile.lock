@@ -2,6 +2,7 @@ PODS:
   - Bolts (1.1.3)
   - Facebook-iOS-SDK (3.16.2):
     - Bolts
+  - Masonry (0.5.3)
   - PKMultipartInputStream (1.1.0)
   - RMMapper (1.1.5)
   - SAMTextView (0.2.1)
@@ -31,6 +32,7 @@ PODS:
     - SDWebImage (~> 3.7)
 
 DEPENDENCIES:
+  - Masonry
   - RMMapper
   - ShareKit/Facebook
   - ShareKit/Twitter
@@ -39,6 +41,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
   Facebook-iOS-SDK: 34eef640c2cc4c8618ba0f574ad2b290e07f1b4e
+  Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
   PKMultipartInputStream: 9e18cd438cbfb8900ccb4d26b3f848768cd92e10
   RMMapper: a32a1cc09d9652a83965906197097d2256d229f6
   SAMTextView: 1062a784ba7b2080b0c17748001c416b53010b4b

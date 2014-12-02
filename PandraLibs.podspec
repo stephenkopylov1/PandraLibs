@@ -36,4 +36,5 @@ Pod::Spec.new do |s|
   s.dependency  'ShareKit/Facebook'
   s.dependency  'ShareKit/Vkontakte'
   s.dependency  'ShareKit/Twitter'
+  s.dependency  'Masonry'
 end

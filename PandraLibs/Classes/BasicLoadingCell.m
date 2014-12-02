@@ -7,6 +7,7 @@
 //
 
 #import "BasicLoadingCell.h"
+#import "CC.h"
 
 @implementation BasicLoadingCell
 -(void)didMoveToSuperview{

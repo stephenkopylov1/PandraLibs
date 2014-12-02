@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "638840E95B3F185384B20375"
+               BlueprintIdentifier = "4C25099E1FA415A7A7D9C966"
                BuildableName = "libPods-PKMultipartInputStream.a"
                BlueprintName = "Pods-PKMultipartInputStream"
                ReferencedContainer = "container:Pods.xcodeproj">
