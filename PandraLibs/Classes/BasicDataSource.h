@@ -12,6 +12,7 @@
 
 @interface BasicDataSource : NSObject
 @property (readwrite) BasicDataSourceAdapter *adapter;
+@property (readwrite) BOOL loading;
 -(void)registerCollectionView:(BasicCollectionView*)collectionView;
 -(BasicDataSourceAdapter*)getAdapter;
 @property (strong,nonatomic) NSMutableArray *data;
