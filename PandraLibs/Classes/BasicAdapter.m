@@ -9,5 +9,9 @@
 #import "BasicAdapter.h"
 
 @implementation BasicAdapter
-
+@synthesize basicDataSource;
+@synthesize view;
+-(void)registerView:(id)view{
+ 
+}
 @end

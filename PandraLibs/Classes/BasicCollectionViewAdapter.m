@@ -22,7 +22,7 @@
 }
 
 - (void)refreshControlAction:(id)sender {
-    [self.dataSource refreshData];
+    [self.basicDataSource refreshData];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -30,16 +30,21 @@
     if(self.view.loadingMoreEnabled){
         numberOfItems += 1;
     }
+    NSLog(@"num = %lu",(unsigned long)numberOfItems);
     return numberOfItems;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.view.loadingMoreEnabled && indexPath.row == [self collectionView:collectionView numberOfItemsInSection:indexPath.section] - 1) {
-        [self.dataSource loadMore];
+    NSLog(@"123123");
+    if (self.view.loadingMoreEnabled && indexPath.row == [self collectionView:collectionView numberOfItemsInSection:indexPath.section] - 1)
+    {
+        [self.basicDataSource loadMore];
         BasicLoadingCell *cell = [self.view dequeueReusableCellWithReuseIdentifier:@"loadingCell" forIndexPath:indexPath];
         [self prepareLoadingCell:cell withIndexPath:indexPath];
         return cell;
-    }else{
-        return  [self cellForItemAtIndexPath:indexPath];
+    }
+    else
+    {
+        return [self cellForItemAtIndexPath:indexPath];
     }
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -52,6 +57,18 @@
 - (BasicLoadingCell *)prepareLoadingCell:(BasicLoadingCell *)cell withIndexPath:(NSIndexPath *)indexPath {
     [cell.activityIndicator startAnimating];
     return cell;
+}
+
+-(NSInteger)numberOfItemsInSection:(NSInteger)section{
+    return 0;
+}
+
+-(UICollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return nil;
+}
+
+-(CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(0, 0);
 }
 
 @end

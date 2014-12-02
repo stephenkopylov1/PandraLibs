@@ -7,7 +7,10 @@
 //
 
 #import "cvDataSourceSample.h"
+#import "cvAdapterSample.h"
 
 @implementation cvDataSourceSample
-
+-(BasicAdapter *)getAdapter{
+    return [[cvAdapterSample alloc] init];
+}
 @end

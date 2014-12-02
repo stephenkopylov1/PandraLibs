@@ -18,6 +18,8 @@
 
 -(void)loadMore;
 
+-(BasicAdapter*)getAdapter;
+
 @property (readwrite) BOOL loading;
 
 @property (strong ,nonatomic) id data;

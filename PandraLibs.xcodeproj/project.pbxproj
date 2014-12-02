@@ -24,6 +24,7 @@
 		849411A51A2E6469006A70A5 /* CollectionViewSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411A41A2E6469006A70A5 /* CollectionViewSample.m */; };
 		849411A91A2E64FC006A70A5 /* cvAdapterSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411A81A2E64FC006A70A5 /* cvAdapterSample.m */; };
 		849411AC1A2E6520006A70A5 /* cvDataSourceSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411AB1A2E6520006A70A5 /* cvDataSourceSample.m */; };
+		849411AF1A2E689A006A70A5 /* cvCellSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411AE1A2E689A006A70A5 /* cvCellSample.m */; };
 		84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */; };
 		84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D51A0FE34A00BE6045 /* BasicContextManager.m */; };
 		84C2A8F21A0FE34A00BE6045 /* BasicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D71A0FE34A00BE6045 /* BasicDataSource.m */; };
@@ -92,6 +93,8 @@
 		849411A81A2E64FC006A70A5 /* cvAdapterSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cvAdapterSample.m; path = PandraLibs/cvAdapterSample.m; sourceTree = "<group>"; };
 		849411AA1A2E6520006A70A5 /* cvDataSourceSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvDataSourceSample.h; path = PandraLibs/cvDataSourceSample.h; sourceTree = "<group>"; };
 		849411AB1A2E6520006A70A5 /* cvDataSourceSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cvDataSourceSample.m; path = PandraLibs/cvDataSourceSample.m; sourceTree = "<group>"; };
+		849411AD1A2E689A006A70A5 /* cvCellSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvCellSample.h; path = PandraLibs/cvCellSample.h; sourceTree = "<group>"; };
+		849411AE1A2E689A006A70A5 /* cvCellSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cvCellSample.m; path = PandraLibs/cvCellSample.m; sourceTree = "<group>"; };
 		84C2A8D21A0FE34A00BE6045 /* BasicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCollectionView.h; path = Classes/BasicCollectionView.h; sourceTree = "<group>"; };
 		84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCollectionView.m; path = Classes/BasicCollectionView.m; sourceTree = "<group>"; };
 		84C2A8D41A0FE34A00BE6045 /* BasicContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicContextManager.h; path = Classes/BasicContextManager.h; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 				849411A81A2E64FC006A70A5 /* cvAdapterSample.m */,
 				849411AA1A2E6520006A70A5 /* cvDataSourceSample.h */,
 				849411AB1A2E6520006A70A5 /* cvDataSourceSample.m */,
+				849411AD1A2E689A006A70A5 /* cvCellSample.h */,
+				849411AE1A2E689A006A70A5 /* cvCellSample.m */,
 			);
 			name = CollectionViewSample;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
 				4CA2D6101A2DFBBF00E21E08 /* BasicLoadingCell.m in Sources */,
 				84C2A8FA1A0FE34A00BE6045 /* BasicCoredataManager.m in Sources */,
+				849411AF1A2E689A006A70A5 /* cvCellSample.m in Sources */,
 				84C2A8F81A0FE34A00BE6045 /* BasicSyncer.m in Sources */,
 				84C2A9031A0FEAF700BE6045 /* BasicProcessor.m in Sources */,
 				84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */,

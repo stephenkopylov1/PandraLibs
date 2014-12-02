@@ -7,12 +7,15 @@
 //
 
 #import "CollectionViewSample.h"
+#import "BasicCollectionView.h"
+#import "cvDataSourceSample.h"
 
 @implementation CollectionViewSample
 -(void)viewDidLoad{
     self.view.backgroundColor = [UIColor whiteColor];
     
-    
+    BasicCollectionView *basicCollectionView = [[BasicCollectionView alloc] initWithDataSource:[[cvDataSourceSample alloc] init]];
+    [self.view addSubview:basicCollectionView];
     
 }
 @end

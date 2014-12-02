@@ -22,6 +22,4 @@
 
 @property (strong , nonatomic) BasicCollectionView *view;
 
-@property (strong,nonatomic) BasicCollectionViewDataSource *dataSource;
-
 @end

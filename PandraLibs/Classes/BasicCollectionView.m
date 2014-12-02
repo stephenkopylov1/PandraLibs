@@ -12,8 +12,10 @@
 @implementation BasicCollectionView{
     
 }
+@synthesize basicDataSource;
 
 -(instancetype)initWithDataSource:(BasicDataSource *)dataSource{
+    NSLog(@"initWithDataSource = %@",dataSource);
     self.basicDataSource = (BasicCollectionViewDataSource*)dataSource;
     return [super initWithFrame:CGRectMake(0, 0, 0, 0) collectionViewLayout:[self getFlowLayout]];
 }

@@ -12,6 +12,6 @@
 
 @class BasicDataSource;
 
-@interface BasicAdapter : NSObject <BasicDataSourceDelegate,BasicAdapterProtocol>
+@interface BasicAdapter : NSObject <BasicDataSourceDelegate, BasicAdapterProtocol>
 
 @end

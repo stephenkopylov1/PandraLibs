@@ -10,18 +10,21 @@
 
 @implementation BasicDataSource
 
+@synthesize adapter;
+@synthesize delegate;
+
 -(void)registerView:(id)view{
-    if(self.adapter==nil){
-        self.adapter = [self getAdapter];
+    if(adapter==nil){
+        adapter = [self getAdapter];
     }
-    self.adapter.basicDataSource = self;
-    [self.adapter registerView:view];
+    adapter.basicDataSource = self;
+    [adapter registerView:view];
     self.delegate = self.adapter;
 }
  
 -(BasicAdapter*)getAdapter{
-    BasicAdapter *adapter = [[BasicAdapter alloc] init];
-    return adapter;
+    BasicAdapter *newAdapter = [[BasicAdapter alloc] init];
+    return newAdapter;
 }
 
 @end
