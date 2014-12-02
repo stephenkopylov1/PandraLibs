@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "PandraLibsVC.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -18,7 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.backgroundColor = [UIColor blackColor];
+    
+    PandraLibsVC *pandraLibsVC = [[PandraLibsVC alloc] init];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:pandraLibsVC];
+    
+    [self.window addSubview:navController.view];
+    
+    [self.window setRootViewController:navController];
+    
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

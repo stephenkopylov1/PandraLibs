@@ -21,6 +21,9 @@
 		849411971A2E5886006A70A5 /* BasicArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411961A2E5886006A70A5 /* BasicArrayDataSource.m */; };
 		8494119A1A2E5B04006A70A5 /* BasicCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411991A2E5B04006A70A5 /* BasicCollectionViewAdapter.m */; };
 		8494119F1A2E5FE2006A70A5 /* PandraLibsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494119E1A2E5FE2006A70A5 /* PandraLibsVC.m */; };
+		849411A51A2E6469006A70A5 /* CollectionViewSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411A41A2E6469006A70A5 /* CollectionViewSample.m */; };
+		849411A91A2E64FC006A70A5 /* cvAdapterSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411A81A2E64FC006A70A5 /* cvAdapterSample.m */; };
+		849411AC1A2E6520006A70A5 /* cvDataSourceSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411AB1A2E6520006A70A5 /* cvDataSourceSample.m */; };
 		84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */; };
 		84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D51A0FE34A00BE6045 /* BasicContextManager.m */; };
 		84C2A8F21A0FE34A00BE6045 /* BasicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D71A0FE34A00BE6045 /* BasicDataSource.m */; };
@@ -79,10 +82,16 @@
 		849411961A2E5886006A70A5 /* BasicArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicArrayDataSource.m; path = Classes/BasicArrayDataSource.m; sourceTree = "<group>"; };
 		849411981A2E5B04006A70A5 /* BasicCollectionViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCollectionViewAdapter.h; path = Classes/BasicCollectionViewAdapter.h; sourceTree = "<group>"; };
 		849411991A2E5B04006A70A5 /* BasicCollectionViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCollectionViewAdapter.m; path = Classes/BasicCollectionViewAdapter.m; sourceTree = "<group>"; };
-		8494119D1A2E5FE2006A70A5 /* PandraLibsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandraLibsVC.h; sourceTree = "<group>"; };
-		8494119E1A2E5FE2006A70A5 /* PandraLibsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PandraLibsVC.m; sourceTree = "<group>"; };
+		8494119D1A2E5FE2006A70A5 /* PandraLibsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PandraLibsVC.h; path = PandraLibs/PandraLibsVC.h; sourceTree = "<group>"; };
+		8494119E1A2E5FE2006A70A5 /* PandraLibsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PandraLibsVC.m; path = PandraLibs/PandraLibsVC.m; sourceTree = "<group>"; };
 		849411A01A2E600A006A70A5 /* BasicAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicAdapterProtocol.h; path = Classes/BasicAdapterProtocol.h; sourceTree = "<group>"; };
 		849411A11A2E6014006A70A5 /* BasicDataSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicDataSourceProtocol.h; path = Classes/BasicDataSourceProtocol.h; sourceTree = "<group>"; };
+		849411A31A2E6469006A70A5 /* CollectionViewSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewSample.h; path = PandraLibs/CollectionViewSample.h; sourceTree = "<group>"; };
+		849411A41A2E6469006A70A5 /* CollectionViewSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewSample.m; path = PandraLibs/CollectionViewSample.m; sourceTree = "<group>"; };
+		849411A71A2E64FC006A70A5 /* cvAdapterSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvAdapterSample.h; path = PandraLibs/cvAdapterSample.h; sourceTree = "<group>"; };
+		849411A81A2E64FC006A70A5 /* cvAdapterSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cvAdapterSample.m; path = PandraLibs/cvAdapterSample.m; sourceTree = "<group>"; };
+		849411AA1A2E6520006A70A5 /* cvDataSourceSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvDataSourceSample.h; path = PandraLibs/cvDataSourceSample.h; sourceTree = "<group>"; };
+		849411AB1A2E6520006A70A5 /* cvDataSourceSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cvDataSourceSample.m; path = PandraLibs/cvDataSourceSample.m; sourceTree = "<group>"; };
 		84C2A8D21A0FE34A00BE6045 /* BasicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCollectionView.h; path = Classes/BasicCollectionView.h; sourceTree = "<group>"; };
 		84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCollectionView.m; path = Classes/BasicCollectionView.m; sourceTree = "<group>"; };
 		84C2A8D41A0FE34A00BE6045 /* BasicContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicContextManager.h; path = Classes/BasicContextManager.h; sourceTree = "<group>"; };
@@ -217,6 +226,7 @@
 		848C3DEF1A0FD419004C9699 = {
 			isa = PBXGroup;
 			children = (
+				849411A21A2E6111006A70A5 /* Develop */,
 				848C3DFA1A0FD419004C9699 /* PandraLibs */,
 				848C3E171A0FD419004C9699 /* PandraLibsTests */,
 				848C3DF91A0FD419004C9699 /* Products */,
@@ -246,8 +256,6 @@
 				845CFCB01A0FDC19000A1A60 /* AppDelegate.m */,
 				848C3E0B1A0FD419004C9699 /* Images.xcassets */,
 				848C3DFB1A0FD419004C9699 /* Supporting Files */,
-				8494119D1A2E5FE2006A70A5 /* PandraLibsVC.h */,
-				8494119E1A2E5FE2006A70A5 /* PandraLibsVC.m */,
 			);
 			path = PandraLibs;
 			sourceTree = "<group>";
@@ -326,6 +334,29 @@
 				4CA2D60F1A2DFBBF00E21E08 /* BasicLoadingCell.m */,
 			);
 			name = misc;
+			sourceTree = "<group>";
+		};
+		849411A21A2E6111006A70A5 /* Develop */ = {
+			isa = PBXGroup;
+			children = (
+				8494119D1A2E5FE2006A70A5 /* PandraLibsVC.h */,
+				849411A61A2E64CE006A70A5 /* CollectionViewSample */,
+				8494119E1A2E5FE2006A70A5 /* PandraLibsVC.m */,
+			);
+			name = Develop;
+			sourceTree = "<group>";
+		};
+		849411A61A2E64CE006A70A5 /* CollectionViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				849411A31A2E6469006A70A5 /* CollectionViewSample.h */,
+				849411A41A2E6469006A70A5 /* CollectionViewSample.m */,
+				849411A71A2E64FC006A70A5 /* cvAdapterSample.h */,
+				849411A81A2E64FC006A70A5 /* cvAdapterSample.m */,
+				849411AA1A2E6520006A70A5 /* cvDataSourceSample.h */,
+				849411AB1A2E6520006A70A5 /* cvDataSourceSample.m */,
+			);
+			name = CollectionViewSample;
 			sourceTree = "<group>";
 		};
 		9A42EEF80F94F46F6818BB2B /* Pods */ = {
@@ -489,11 +520,14 @@
 				84C2A8F81A0FE34A00BE6045 /* BasicSyncer.m in Sources */,
 				84C2A9031A0FEAF700BE6045 /* BasicProcessor.m in Sources */,
 				84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */,
+				849411A91A2E64FC006A70A5 /* cvAdapterSample.m in Sources */,
 				845CFCB11A0FDC19000A1A60 /* AppDelegate.m in Sources */,
+				849411AC1A2E6520006A70A5 /* cvDataSourceSample.m in Sources */,
 				84C2A8FC1A0FE34A00BE6045 /* MT.m in Sources */,
 				84C2A8F91A0FE34A00BE6045 /* CC.m in Sources */,
 				84C2A8F71A0FE34A00BE6045 /* BasicSaver.m in Sources */,
 				849411821A2E4D20006A70A5 /* BasicAdapter.m in Sources */,
+				849411A51A2E6469006A70A5 /* CollectionViewSample.m in Sources */,
 				84C2A8F61A0FE34A00BE6045 /* BasicPostprocessor.m in Sources */,
 				84C2A8FD1A0FE34A00BE6045 /* PP.m in Sources */,
 				8494119A1A2E5B04006A70A5 /* BasicCollectionViewAdapter.m in Sources */,
