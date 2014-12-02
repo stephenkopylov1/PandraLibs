@@ -343,8 +343,8 @@
 			isa = PBXGroup;
 			children = (
 				8494119D1A2E5FE2006A70A5 /* PandraLibsVC.h */,
-				849411A61A2E64CE006A70A5 /* CollectionViewSample */,
 				8494119E1A2E5FE2006A70A5 /* PandraLibsVC.m */,
+				849411A61A2E64CE006A70A5 /* CollectionViewSample */,
 			);
 			name = Develop;
 			sourceTree = "<group>";

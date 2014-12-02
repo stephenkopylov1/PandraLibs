@@ -21,6 +21,11 @@
     [button1 setTitle:@"collectionView" forState:UIControlStateNormal];
     [button1 addTarget:self action:@selector(collectionViewSample) forControlEvents:UIControlEventTouchUpInside];
     [self addButton:button1];
+    
+    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button2 setTitle:@"uiView" forState:UIControlStateNormal];
+    [button2 addTarget:self action:@selector(collectionViewSample) forControlEvents:UIControlEventTouchUpInside];
+    [self addButton:button2];
 }
 
 -(void)addButton:(UIButton*)button{

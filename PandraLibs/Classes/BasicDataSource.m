@@ -27,4 +27,12 @@
     return newAdapter;
 }
 
+-(void)refreshData{
+    
+}
+
+-(void)loadMore{
+    
+}
+
 @end

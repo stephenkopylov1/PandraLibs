@@ -10,15 +10,11 @@
 
 @implementation BasicArrayDataSource
 
-
 -(void)setCurrentData:(NSMutableArray *)data{
-    NSLog(@"setCurrentData = %@",data);
     self.data = data;
     if(self.delegate !=nil && [self.delegate respondsToSelector:@selector(dataChanged:)]){
-        NSLog(@"allok = %@",data);
         [self.delegate dataChanged:self.data];
     }
-    
 }
 
 @end

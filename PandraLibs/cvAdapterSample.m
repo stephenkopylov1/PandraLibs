@@ -17,17 +17,14 @@
 }
 
 -(NSInteger)numberOfItemsInSection:(NSInteger)section{
-    NSLog(@"numberOfItemsInSection");
     return 2;
 }
 -(UICollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"cellForItemAtIndexPath");
     cvCellSample *cell = [self.view dequeueReusableCellWithReuseIdentifier:@"sampleCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor blackColor];
     return cell;
 }
 -(CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-        NSLog(@"sizeForItemAtIndexPath");
     return  CGSizeMake(50, 50);
 }
 -(void)dataChanged:(NSMutableArray *)newData{

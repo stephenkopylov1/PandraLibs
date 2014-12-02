@@ -30,11 +30,9 @@
     if(self.view.loadingMoreEnabled){
         numberOfItems += 1;
     }
-    NSLog(@"num = %lu",(unsigned long)numberOfItems);
     return numberOfItems;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"123123");
     if (self.view.loadingMoreEnabled && indexPath.row == [self collectionView:collectionView numberOfItemsInSection:indexPath.section] - 1)
     {
         [self.basicDataSource loadMore];
@@ -48,6 +46,7 @@
     }
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+        NSLog(@"sizeForItemAtIndexPath");
     if (self.view.loadingMoreEnabled && indexPath.row == [self collectionView:collectionView numberOfItemsInSection:indexPath.section] - 1) {
         return CGSizeMake(self.view.frame.size.width, 50);
     }else{
