@@ -14,7 +14,7 @@
 @class BasicDataSource;
 
 @interface BasicDataSourceAdapter : NSObject <UICollectionViewDelegate,UICollectionViewDataSource,BasicDataSourceDelegate>
-@property (readwrite) BasicDataSource *dataSource;
+@property (strong,nonatomic) BasicDataSource *dataSource;
 @property (readwrite) BasicCollectionView *collectionView;
 -(void)registerCollectionView:(BasicCollectionView *)collectionView;
 -(NSInteger)numberOfItemsInSection:(NSInteger)section;

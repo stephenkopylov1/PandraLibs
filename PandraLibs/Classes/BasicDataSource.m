@@ -18,8 +18,6 @@
     self.adapter.dataSource = self;
     [self.adapter registerCollectionView:collectionView];
     self.delegate = self.adapter;
-    collectionView.delegate = self.adapter;
-    collectionView.dataSource = self.adapter;
 }
 -(BasicDataSourceAdapter*)getAdapter{
     BasicDataSourceAdapter *adapter = [[BasicDataSourceAdapter alloc] init];
