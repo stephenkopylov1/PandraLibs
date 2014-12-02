@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 Pandra. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "BasicDataSource.h"
 
-@interface BasicArrayDataSource : NSObject
+@interface BasicArrayDataSource : BasicDataSource
 
 @end

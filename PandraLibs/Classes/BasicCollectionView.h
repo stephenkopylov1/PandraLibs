@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@class BasicDataSource;
-@interface BasicCollectionView : UICollectionView
--(instancetype) initWithDataSource:(BasicDataSource*)dataSource;
+#import "BasicCollectionViewDataSource.h"
+#import "BasicViewProtocol.h"
+
+@interface BasicCollectionView : UICollectionView <BasicViewProtocol>
+
 -(UICollectionViewFlowLayout*)getFlowLayout;
+
 @property (readwrite) BOOL refreshEnabled;
+
 @property (readwrite) BOOL loadingMoreEnabled;
+
 @property (strong,nonatomic) UIRefreshControl *refreshControl;
-@property (strong,nonatomic) BasicDataSource *basicDataSource;
+
+
 @end

@@ -8,11 +8,13 @@
 
 #import "BasicCollectionView.h"
 #import "BasicDataSource.h"
+#import "BasicCollectionViewDataSource.h"
 @implementation BasicCollectionView{
     
 }
+
 -(instancetype)initWithDataSource:(BasicDataSource *)dataSource{
-    self.basicDataSource = dataSource;
+    self.basicDataSource = (BasicCollectionViewDataSource*)dataSource;
     return [super initWithFrame:CGRectMake(0, 0, 0, 0) collectionViewLayout:[self getFlowLayout]];
 }
 -(void)didMoveToSuperview{
@@ -21,7 +23,7 @@
         self.refreshControl.tintColor = [UIColor grayColor];
         [self addSubview:self.refreshControl];
     }
-    [self.basicDataSource registerCollectionView:self];
+    [self.basicDataSource registerView:self];
 }
 -(UICollectionViewFlowLayout *)getFlowLayout{
     UICollectionViewFlowLayout *flowLaout = [[UICollectionViewFlowLayout alloc] init];

@@ -7,20 +7,21 @@
 //
 
 #import "BasicDataSource.h"
-#import "BasicDataSourceDelegate.h"
 
 @implementation BasicDataSource
--(void)registerView:(id)view;
-    NSLog(@"registerCollectionView");
+
+-(void)registerView:(id)view{
     if(self.adapter==nil){
         self.adapter = [self getAdapter];
     }
     self.adapter.dataSource = self;
-    [self.adapter registerCollectionView:collectionView];
+    [self.adapter registerView:view];
     self.delegate = self.adapter;
 }
--(BasicDataSourceAdapter*)getAdapter{
-    BasicDataSourceAdapter *adapter = [[BasicDataSourceAdapter alloc] init];
+
+ 
+-(BasicAdapter*)getAdapter{
+    BasicAdapter *adapter = [[BasicAdapter alloc] init];
     return adapter;
 }
 
@@ -28,16 +29,19 @@
     
 }
 
+
 -(void)loadMore{
     
 }
 
 -(void)setCurrentData:(NSMutableArray *)data{
+    
     NSLog(@"setCurrentData = %@",data);
     self.data = data;
     if(self.delegate !=nil && [self.delegate respondsToSelector:@selector(dataChanged:)]){
         NSLog(@"allok = %@",data);
         [self.delegate dataChanged:self.data];
     }
+    
 }
 @end

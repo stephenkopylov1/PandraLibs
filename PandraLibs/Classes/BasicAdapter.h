@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BasicDataSourceDelegate.h"
 
 @class BasicDataSource;
 
-@interface BasicAdapter : NSObject
+@interface BasicAdapter : NSObject <BasicDataSourceDelegate>
 @property (strong,nonatomic) BasicDataSource *dataSource;
 -(void)registerView:(id)view;
 @end

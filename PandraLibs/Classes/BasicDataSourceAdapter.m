@@ -34,7 +34,6 @@
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     if (self.collectionView.loadingMoreEnabled && indexPath.row == [self collectionView:collectionView numberOfItemsInSection:indexPath.section] - 1) {
-        NSLog(@"LOADMORE");
         [self.dataSource loadMore];
         BasicLoadingCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"loadingCell" forIndexPath:indexPath];
         [self prepareLoadingCell:cell withIndexPath:indexPath];
@@ -45,10 +44,8 @@
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.collectionView.loadingMoreEnabled && indexPath.row == [self collectionView:collectionView numberOfItemsInSection:indexPath.section] - 1) {
-        NSLog(@"LOADMORE");
         return CGSizeMake(self.collectionView.frame.size.width, 50);
     }else{
-        
         return [self sizeForItemAtIndexPath:indexPath];
     }
 }
