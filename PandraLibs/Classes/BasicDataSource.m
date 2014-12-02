@@ -25,9 +25,16 @@
     BasicDataSourceAdapter *adapter = [[BasicDataSourceAdapter alloc] init];
     return adapter;
 }
+
+-(void)refreshData{
+    
+}
+
 -(void)setCurrentData:(NSMutableArray *)data{
+    NSLog(@"setCurrentData = %@",data);
     self.data = data;
     if(self.delegate !=nil && [self.delegate respondsToSelector:@selector(dataChanged:)]){
+        NSLog(@"allok = %@",data);
         [self.delegate dataChanged:self.data];
     }
 }

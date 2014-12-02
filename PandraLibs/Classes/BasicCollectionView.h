@@ -12,4 +12,8 @@
 @interface BasicCollectionView : UICollectionView
 -(instancetype) initWithDataSource:(BasicDataSource*)dataSource;
 -(UICollectionViewFlowLayout*)getFlowLayout;
+@property (readwrite) BOOL refreshEnabled;
+@property (readwrite) BOOL loadingMoreEnabled;
+@property (strong,nonatomic) UIRefreshControl *refreshControl;
+@property (strong,nonatomic) BasicDataSource *basicDataSource;
 @end

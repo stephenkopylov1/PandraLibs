@@ -10,5 +10,16 @@
 #import "BasicDataSource.h"
 
 @implementation BasicDataSourceAdapter
+-(void)registerCollectionView:(BasicCollectionView *)collectionView{
+    self.collectionView = collectionView;
+    if(self.collectionView.refreshEnabled){
+        [self.collectionView.refreshControl addTarget:self action:@selector(refreshControlAction:) forControlEvents:UIControlEventValueChanged];
+    }
+}
+
+- (void)refreshControlAction:(id)sender {
+    [self.dataSource refreshData];
+}
+
 
 @end
