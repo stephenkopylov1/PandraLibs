@@ -8,12 +8,14 @@
 
 #import "BasicDataSourceAdapter.h"
 #import "BasicDataSource.h"
+#import "BasicLoadingCell.h"
 
 @implementation BasicDataSourceAdapter
 -(void)registerCollectionView:(BasicCollectionView *)collectionView{
     self.collectionView = collectionView;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+    [self.collectionView  registerClass:[BasicLoadingCell class] forCellWithReuseIdentifier:@"loadingCell"];
     if(self.collectionView.refreshEnabled){
         [self.collectionView.refreshControl addTarget:self action:@selector(refreshControlAction:) forControlEvents:UIControlEventValueChanged];
     }
@@ -34,9 +36,9 @@
     if (self.collectionView.loadingMoreEnabled && indexPath.row == [self collectionView:collectionView numberOfItemsInSection:indexPath.section] - 1) {
         NSLog(@"LOADMORE");
         [self.dataSource loadMore];
-        //   wallLoadingCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"loadingCell" forIndexPath:indexPath];
-        // [self prepareLoadingCell:cell withIndexPath:indexPath];
-        // return cell;
+        BasicLoadingCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"loadingCell" forIndexPath:indexPath];
+        [self prepareLoadingCell:cell withIndexPath:indexPath];
+        return cell;
     }else{
         return  [self cellForItemAtIndexPath:indexPath];
     }
@@ -49,6 +51,10 @@
         
         return [self sizeForItemAtIndexPath:indexPath];
     }
+}
+- (BasicLoadingCell *)prepareLoadingCell:(BasicLoadingCell *)cell withIndexPath:(NSIndexPath *)indexPath {
+    [cell.activityIndicator startAnimating];
+    return cell;
 }
 
 @end
