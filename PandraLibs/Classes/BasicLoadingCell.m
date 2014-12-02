@@ -8,6 +8,7 @@
 
 #import "BasicLoadingCell.h"
 #import "CC.h"
+#import <Masonry.h>
 
 @implementation BasicLoadingCell
 -(void)didMoveToSuperview{
