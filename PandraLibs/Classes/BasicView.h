@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BasicViewProtocol.h"
 
-@interface BasicView : UIView
+@interface BasicView : UIView <BasicViewProtocol>
 
 @end

@@ -11,7 +11,7 @@
 @class BasicDataSource;
 
 @protocol BasicAdapterProtocol <NSObject>
-@property (strong,nonatomic) BasicDataSource *dataSource;
+@property (strong,nonatomic) BasicDataSource *basicDataSource;
 -(void)registerView:(id)view;
 @property (strong ,nonatomic) id view;
 @end

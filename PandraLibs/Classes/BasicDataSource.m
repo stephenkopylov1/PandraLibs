@@ -14,7 +14,7 @@
     if(self.adapter==nil){
         self.adapter = [self getAdapter];
     }
-    self.adapter.dataSource = self;
+    self.adapter.basicDataSource = self;
     [self.adapter registerView:view];
     self.delegate = self.adapter;
 }
