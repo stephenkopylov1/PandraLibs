@@ -18,4 +18,5 @@
 @property (nonatomic, weak) id <BasicDataSourceDelegate> delegate;
 -(void)setCurrentData:(NSMutableArray *)data;
 -(void)refreshData;
+-(void)loadMore;
 @end

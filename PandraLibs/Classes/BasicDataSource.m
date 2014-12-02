@@ -30,6 +30,10 @@
     
 }
 
+-(void)loadMore{
+    
+}
+
 -(void)setCurrentData:(NSMutableArray *)data{
     NSLog(@"setCurrentData = %@",data);
     self.data = data;
