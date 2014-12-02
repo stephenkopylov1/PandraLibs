@@ -10,7 +10,7 @@
 #import "BasicDataSourceDelegate.h"
 
 @implementation BasicDataSource
--(void)registerCollectionView:(BasicCollectionView *)collectionView{
+-(void)registerView:(id)view;
     NSLog(@"registerCollectionView");
     if(self.adapter==nil){
         self.adapter = [self getAdapter];

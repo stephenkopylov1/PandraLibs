@@ -10,11 +10,10 @@
 #import "BasicDataSourceDelegate.h"
 #import "BasicCollectionView.h"
 #import <UIKit/UIKit.h>
+#import "BasicAdapter.h"
 
-@class BasicDataSource;
+@interface BasicDataSourceAdapter : BasicAdapter <UICollectionViewDelegate,UICollectionViewDataSource,BasicDataSourceDelegate>
 
-@interface BasicDataSourceAdapter : NSObject <UICollectionViewDelegate,UICollectionViewDataSource,BasicDataSourceDelegate>
-@property (strong,nonatomic) BasicDataSource *dataSource;
 @property (readwrite) BasicCollectionView *collectionView;
 -(void)registerCollectionView:(BasicCollectionView *)collectionView;
 -(NSInteger)numberOfItemsInSection:(NSInteger)section;

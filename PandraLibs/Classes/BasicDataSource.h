@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "BasicCollectionView.h"
-#import "BasicDataSourceAdapter.h"
+#import "BasicAdapter.h"
+
 
 @interface BasicDataSource : NSObject
-@property (readwrite) BasicDataSourceAdapter *adapter;
+@property (readwrite) BasicAdapter *adapter;
 @property (readwrite) BOOL loading;
--(void)registerCollectionView:(BasicCollectionView*)collectionView;
--(BasicDataSourceAdapter*)getAdapter;
-@property (strong,nonatomic) NSMutableArray *data;
+-(void)registerView:(id)view;
+@property (strong,nonatomic) id *data;
 @property (nonatomic, weak) id <BasicDataSourceDelegate> delegate;
 -(void)setCurrentData:(NSMutableArray *)data;
 -(void)refreshData;

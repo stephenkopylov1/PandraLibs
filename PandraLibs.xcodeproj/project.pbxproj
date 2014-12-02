@@ -15,6 +15,10 @@
 		848C3DFE1A0FD419004C9699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3DFD1A0FD419004C9699 /* main.m */; };
 		848C3E0C1A0FD419004C9699 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C3E0B1A0FD419004C9699 /* Images.xcassets */; };
 		848C3E1B1A0FD419004C9699 /* PandraLibsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3E1A1A0FD419004C9699 /* PandraLibsTests.m */; };
+		849411821A2E4D20006A70A5 /* BasicAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411811A2E4D20006A70A5 /* BasicAdapter.m */; };
+		849411881A2E4E1B006A70A5 /* BasicArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411871A2E4E1B006A70A5 /* BasicArrayDataSource.m */; };
+		8494118B1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494118A1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m */; };
+		8494118E1A2E4FD5006A70A5 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494118D1A2E4FD5006A70A5 /* BasicView.m */; };
 		84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */; };
 		84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D51A0FE34A00BE6045 /* BasicContextManager.m */; };
 		84C2A8F21A0FE34A00BE6045 /* BasicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D71A0FE34A00BE6045 /* BasicDataSource.m */; };
@@ -62,6 +66,14 @@
 		848C3E141A0FD419004C9699 /* PandraLibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandraLibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848C3E191A0FD419004C9699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848C3E1A1A0FD419004C9699 /* PandraLibsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandraLibsTests.m; sourceTree = "<group>"; };
+		849411801A2E4D20006A70A5 /* BasicAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicAdapter.h; path = Classes/BasicAdapter.h; sourceTree = "<group>"; };
+		849411811A2E4D20006A70A5 /* BasicAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicAdapter.m; path = Classes/BasicAdapter.m; sourceTree = "<group>"; };
+		849411861A2E4E1B006A70A5 /* BasicArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicArrayDataSource.h; path = Classes/BasicArrayDataSource.h; sourceTree = "<group>"; };
+		849411871A2E4E1B006A70A5 /* BasicArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicArrayDataSource.m; path = Classes/BasicArrayDataSource.m; sourceTree = "<group>"; };
+		849411891A2E4F13006A70A5 /* BasicCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCollectionViewDataSource.h; path = Classes/BasicCollectionViewDataSource.h; sourceTree = "<group>"; };
+		8494118A1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCollectionViewDataSource.m; path = Classes/BasicCollectionViewDataSource.m; sourceTree = "<group>"; };
+		8494118C1A2E4FD5006A70A5 /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicView.h; path = Classes/BasicView.h; sourceTree = "<group>"; };
+		8494118D1A2E4FD5006A70A5 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicView.m; path = Classes/BasicView.m; sourceTree = "<group>"; };
 		84C2A8D21A0FE34A00BE6045 /* BasicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCollectionView.h; path = Classes/BasicCollectionView.h; sourceTree = "<group>"; };
 		84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCollectionView.m; path = Classes/BasicCollectionView.m; sourceTree = "<group>"; };
 		84C2A8D41A0FE34A00BE6045 /* BasicContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicContextManager.h; path = Classes/BasicContextManager.h; sourceTree = "<group>"; };
@@ -161,7 +173,7 @@
 			name = coredata;
 			sourceTree = "<group>";
 		};
-		845CFCEF1A0FDE6B000A1A60 /* lists */ = {
+		845CFCEF1A0FDE6B000A1A60 /* mvc */ = {
 			isa = PBXGroup;
 			children = (
 				4CA2D60E1A2DFBBF00E21E08 /* BasicLoadingCell.h */,
@@ -173,8 +185,16 @@
 				84C2A8D81A0FE34A00BE6045 /* BasicDataSourceAdapter.h */,
 				84C2A8D91A0FE34A00BE6045 /* BasicDataSourceAdapter.m */,
 				84C2A8DA1A0FE34A00BE6045 /* BasicDataSourceDelegate.h */,
+				849411801A2E4D20006A70A5 /* BasicAdapter.h */,
+				849411811A2E4D20006A70A5 /* BasicAdapter.m */,
+				849411861A2E4E1B006A70A5 /* BasicArrayDataSource.h */,
+				849411871A2E4E1B006A70A5 /* BasicArrayDataSource.m */,
+				849411891A2E4F13006A70A5 /* BasicCollectionViewDataSource.h */,
+				8494118A1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m */,
+				8494118C1A2E4FD5006A70A5 /* BasicView.h */,
+				8494118D1A2E4FD5006A70A5 /* BasicView.m */,
 			);
-			name = lists;
+			name = mvc;
 			sourceTree = "<group>";
 		};
 		845CFCF01A0FDE7A000A1A60 /* utilits */ = {
@@ -224,7 +244,7 @@
 				4CD6E88F1A1CFC91000BBD5D /* sharing */,
 				84C2A8ED1A0FE34A00BE6045 /* PandraLibs.h */,
 				845CFCF01A0FDE7A000A1A60 /* utilits */,
-				845CFCEF1A0FDE6B000A1A60 /* lists */,
+				845CFCEF1A0FDE6B000A1A60 /* mvc */,
 				845CFCEE1A0FDE52000A1A60 /* coredata */,
 				845CFCAF1A0FDC19000A1A60 /* AppDelegate.h */,
 				845CFCB01A0FDC19000A1A60 /* AppDelegate.m */,
@@ -410,7 +430,10 @@
 				84C2A8F41A0FE34A00BE6045 /* BasicLinker.m in Sources */,
 				84C2A8F31A0FE34A00BE6045 /* BasicDataSourceAdapter.m in Sources */,
 				84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */,
+				8494118B1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m in Sources */,
 				84C2A8F51A0FE34A00BE6045 /* BasicMTContextProcessor.m in Sources */,
+				849411881A2E4E1B006A70A5 /* BasicArrayDataSource.m in Sources */,
+				8494118E1A2E4FD5006A70A5 /* BasicView.m in Sources */,
 				84C2A8FB1A0FE34A00BE6045 /* DF.m in Sources */,
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
 				4CA2D6101A2DFBBF00E21E08 /* BasicLoadingCell.m in Sources */,
@@ -422,6 +445,7 @@
 				84C2A8FC1A0FE34A00BE6045 /* MT.m in Sources */,
 				84C2A8F91A0FE34A00BE6045 /* CC.m in Sources */,
 				84C2A8F71A0FE34A00BE6045 /* BasicSaver.m in Sources */,
+				849411821A2E4D20006A70A5 /* BasicAdapter.m in Sources */,
 				84C2A8F61A0FE34A00BE6045 /* BasicPostprocessor.m in Sources */,
 				84C2A8FD1A0FE34A00BE6045 /* PP.m in Sources */,
 				84C2A9091A0FED6400BE6045 /* CM.m in Sources */,
