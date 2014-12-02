@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "BasicDataSourceDelegate.h"
+#import "BasicAdapterProtocol.h"
 
 @class BasicDataSource;
 
-@interface BasicAdapter : NSObject <BasicDataSourceDelegate>
-@property (strong,nonatomic) BasicDataSource *dataSource;
--(void)registerView:(id)view;
+@interface BasicAdapter : NSObject <BasicDataSourceDelegate,BasicAdapterProtocol>
+
 @end

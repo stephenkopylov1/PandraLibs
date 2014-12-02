@@ -11,6 +11,7 @@
 #import "BasicLoadingCell.h"
 
 @implementation BasicDataSourceAdapter
+/*
 -(void)registerCollectionView:(BasicCollectionView *)collectionView{
     self.collectionView = collectionView;
     self.collectionView.delegate = self;
@@ -53,5 +54,6 @@
     [cell.activityIndicator startAnimating];
     return cell;
 }
+ */
 
 @end

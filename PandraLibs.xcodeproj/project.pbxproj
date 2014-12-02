@@ -19,6 +19,7 @@
 		8494118B1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494118A1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m */; };
 		8494118E1A2E4FD5006A70A5 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8494118D1A2E4FD5006A70A5 /* BasicView.m */; };
 		849411971A2E5886006A70A5 /* BasicArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411961A2E5886006A70A5 /* BasicArrayDataSource.m */; };
+		8494119A1A2E5B04006A70A5 /* BasicCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 849411991A2E5B04006A70A5 /* BasicCollectionViewAdapter.m */; };
 		84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */; };
 		84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D51A0FE34A00BE6045 /* BasicContextManager.m */; };
 		84C2A8F21A0FE34A00BE6045 /* BasicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D71A0FE34A00BE6045 /* BasicDataSource.m */; };
@@ -75,6 +76,10 @@
 		849411901A2E5120006A70A5 /* BasicViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicViewProtocol.h; path = Classes/BasicViewProtocol.h; sourceTree = "<group>"; };
 		849411951A2E5886006A70A5 /* BasicArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicArrayDataSource.h; path = Classes/BasicArrayDataSource.h; sourceTree = "<group>"; };
 		849411961A2E5886006A70A5 /* BasicArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicArrayDataSource.m; path = Classes/BasicArrayDataSource.m; sourceTree = "<group>"; };
+		849411981A2E5B04006A70A5 /* BasicCollectionViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCollectionViewAdapter.h; path = Classes/BasicCollectionViewAdapter.h; sourceTree = "<group>"; };
+		849411991A2E5B04006A70A5 /* BasicCollectionViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCollectionViewAdapter.m; path = Classes/BasicCollectionViewAdapter.m; sourceTree = "<group>"; };
+		8494119B1A2E5BD3006A70A5 /* BasicAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAdapterProtocol.h; sourceTree = "<group>"; };
+		8494119C1A2E5E44006A70A5 /* BasicDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicDataSourceProtocol.h; sourceTree = "<group>"; };
 		84C2A8D21A0FE34A00BE6045 /* BasicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicCollectionView.h; path = Classes/BasicCollectionView.h; sourceTree = "<group>"; };
 		84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicCollectionView.m; path = Classes/BasicCollectionView.m; sourceTree = "<group>"; };
 		84C2A8D41A0FE34A00BE6045 /* BasicContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicContextManager.h; path = Classes/BasicContextManager.h; sourceTree = "<group>"; };
@@ -287,6 +292,9 @@
 				84C2A8D91A0FE34A00BE6045 /* BasicDataSourceAdapter.m */,
 				849411801A2E4D20006A70A5 /* BasicAdapter.h */,
 				849411811A2E4D20006A70A5 /* BasicAdapter.m */,
+				849411981A2E5B04006A70A5 /* BasicCollectionViewAdapter.h */,
+				849411991A2E5B04006A70A5 /* BasicCollectionViewAdapter.m */,
+				8494119B1A2E5BD3006A70A5 /* BasicAdapterProtocol.h */,
 			);
 			name = adapters;
 			sourceTree = "<group>";
@@ -301,6 +309,7 @@
 				8494118A1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m */,
 				849411951A2E5886006A70A5 /* BasicArrayDataSource.h */,
 				849411961A2E5886006A70A5 /* BasicArrayDataSource.m */,
+				8494119C1A2E5E44006A70A5 /* BasicDataSourceProtocol.h */,
 			);
 			name = dataSources;
 			sourceTree = "<group>";
@@ -481,6 +490,7 @@
 				849411821A2E4D20006A70A5 /* BasicAdapter.m in Sources */,
 				84C2A8F61A0FE34A00BE6045 /* BasicPostprocessor.m in Sources */,
 				84C2A8FD1A0FE34A00BE6045 /* PP.m in Sources */,
+				8494119A1A2E5B04006A70A5 /* BasicCollectionViewAdapter.m in Sources */,
 				849411971A2E5886006A70A5 /* BasicArrayDataSource.m in Sources */,
 				84C2A9091A0FED6400BE6045 /* CM.m in Sources */,
 			);

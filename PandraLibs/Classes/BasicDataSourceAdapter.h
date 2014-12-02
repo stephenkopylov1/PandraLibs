@@ -16,7 +16,5 @@
 
 @property (readwrite) BasicCollectionView *collectionView;
 -(void)registerCollectionView:(BasicCollectionView *)collectionView;
--(NSInteger)numberOfItemsInSection:(NSInteger)section;
--(UICollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath;
-- (CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
+
 @end

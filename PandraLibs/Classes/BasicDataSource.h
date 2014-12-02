@@ -8,26 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "BasicAdapter.h"
-#import "BasicDataSourceDelegate.h"
+#import "BasicDataSourceProtocol.h"
 
-@interface BasicDataSource : NSObject
-
-
--(void)registerView:(id)view;
-
--(void)setCurrentData:(NSMutableArray *)data;
-
--(void)refreshData;
-
--(void)loadMore;
-
-@property (readwrite) BOOL loading;
-
-@property (strong ,nonatomic) id data;
-
-@property (nonatomic, weak) id <BasicDataSourceDelegate> delegate;
-
-@property (readwrite) BasicAdapter *adapter;
+@interface BasicDataSource : NSObject<BasicDataSourceProtocol>
 
 
 @end
