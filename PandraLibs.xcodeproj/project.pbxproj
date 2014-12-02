@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C4D97671A10A8C5005FD0BE /* TD.h in Sources */ = {isa = PBXBuildFile; fileRef = 84F1AE321A0FFF6B007CAA64 /* TD.h */; };
 		4C4D97681A10A8CC005FD0BE /* TD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F1AE331A0FFF6B007CAA64 /* TD.m */; };
-		4CA4D2D91A2DF90000425D62 /* BasicLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4D2D81A2DF90000425D62 /* BasicLoadingCell.m */; };
+		4CA2D6101A2DFBBF00E21E08 /* BasicLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2D60F1A2DFBBF00E21E08 /* BasicLoadingCell.m */; };
 		4CD6E8921A1CFCAB000BBD5D /* BasicSharingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6E8911A1CFCAB000BBD5D /* BasicSharingManager.m */; };
 		845CFCB11A0FDC19000A1A60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CFCB01A0FDC19000A1A60 /* AppDelegate.m */; };
 		848C3DFE1A0FD419004C9699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3DFD1A0FD419004C9699 /* main.m */; };
@@ -48,8 +48,8 @@
 /* Begin PBXFileReference section */
 		084F732815BFD4EECB13D174 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		321A35CAF5E6431C516AD708 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		4CA4D2D71A2DF90000425D62 /* BasicLoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLoadingCell.h; sourceTree = "<group>"; };
-		4CA4D2D81A2DF90000425D62 /* BasicLoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicLoadingCell.m; sourceTree = "<group>"; };
+		4CA2D60E1A2DFBBF00E21E08 /* BasicLoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicLoadingCell.h; path = Classes/BasicLoadingCell.h; sourceTree = "<group>"; };
+		4CA2D60F1A2DFBBF00E21E08 /* BasicLoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicLoadingCell.m; path = Classes/BasicLoadingCell.m; sourceTree = "<group>"; };
 		4CD6E8901A1CFCAB000BBD5D /* BasicSharingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicSharingManager.h; path = Classes/BasicSharingManager.h; sourceTree = "<group>"; };
 		4CD6E8911A1CFCAB000BBD5D /* BasicSharingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicSharingManager.m; path = Classes/BasicSharingManager.m; sourceTree = "<group>"; };
 		653D76719830801E02024942 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 		845CFCEF1A0FDE6B000A1A60 /* lists */ = {
 			isa = PBXGroup;
 			children = (
-				4CA4D2D71A2DF90000425D62 /* BasicLoadingCell.h */,
-				4CA4D2D81A2DF90000425D62 /* BasicLoadingCell.m */,
+				4CA2D60E1A2DFBBF00E21E08 /* BasicLoadingCell.h */,
+				4CA2D60F1A2DFBBF00E21E08 /* BasicLoadingCell.m */,
 				84C2A8D21A0FE34A00BE6045 /* BasicCollectionView.h */,
 				84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */,
 				84C2A8D61A0FE34A00BE6045 /* BasicDataSource.h */,
@@ -413,7 +413,7 @@
 				84C2A8F51A0FE34A00BE6045 /* BasicMTContextProcessor.m in Sources */,
 				84C2A8FB1A0FE34A00BE6045 /* DF.m in Sources */,
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
-				4CA4D2D91A2DF90000425D62 /* BasicLoadingCell.m in Sources */,
+				4CA2D6101A2DFBBF00E21E08 /* BasicLoadingCell.m in Sources */,
 				84C2A8FA1A0FE34A00BE6045 /* BasicCoredataManager.m in Sources */,
 				84C2A8F81A0FE34A00BE6045 /* BasicSyncer.m in Sources */,
 				84C2A9031A0FEAF700BE6045 /* BasicProcessor.m in Sources */,
