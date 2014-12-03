@@ -14,7 +14,6 @@
 #import "BasicDataSourceDelegate.h"
 #import "BasicCollectionView.h"
 #import "BasicDataSource.h"
-#import "BasicDataSourceAdapter.h"
 #import "BasicContextManager.h"
 #import "BasicLinker.h"
 #import "BasicMTContextProcessor.h"

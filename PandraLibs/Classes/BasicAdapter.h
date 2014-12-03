@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "BasicDataSourceDelegate.h"
 #import "BasicAdapterProtocol.h"
+#import <UIKit/UIKit.h>
 
 @class BasicDataSource;
 
 @interface BasicAdapter : NSObject <BasicDataSourceDelegate, BasicAdapterProtocol>
-
+@property (strong , nonatomic) UIView *view;
 @end

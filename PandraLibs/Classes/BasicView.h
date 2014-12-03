@@ -10,5 +10,5 @@
 #import "BasicViewProtocol.h"
 
 @interface BasicView : UIView <BasicViewProtocol>
-
+@property (strong, nonatomic) BasicDataSource *basicDataSource;
 @end

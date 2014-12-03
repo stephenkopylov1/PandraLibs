@@ -7,12 +7,23 @@
 //
 
 #import "BasicView.h"
+#import "BasicDataSource.h"
 
 @implementation BasicView
 
 -(instancetype)initWithDataSource:(BasicDataSource *)dataSource{
+    NSLog(@"initWithDataSource");
     self.basicDataSource = (BasicDataSource*)dataSource;
     return [super init];
+}
+
+-(void)setup{
+    
+}
+
+-(void)didMoveToSuperview{
+    [self setup];
+    [self.basicDataSource registerView:self];
 }
 
 @end

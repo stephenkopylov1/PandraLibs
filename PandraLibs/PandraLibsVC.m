@@ -9,6 +9,7 @@
 #import "PandraLibsVC.h"
 #import <Masonry.h>
 #import "CollectionViewSample.h"
+#import "UIViewSample.h"
 
 @implementation PandraLibsVC{
     UIButton *lastButton;
@@ -24,7 +25,7 @@
     
     UIButton *button2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button2 setTitle:@"uiView" forState:UIControlStateNormal];
-    [button2 addTarget:self action:@selector(collectionViewSample) forControlEvents:UIControlEventTouchUpInside];
+    [button2 addTarget:self action:@selector(uiViewSample) forControlEvents:UIControlEventTouchUpInside];
     [self addButton:button2];
 }
 
@@ -49,5 +50,11 @@
     CollectionViewSample *vc = [[CollectionViewSample alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+-(void)uiViewSample{
+    UIViewSample *vc = [[UIViewSample alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end

@@ -8,6 +8,8 @@
 
 #import "BasicArrayDataSource.h"
 
-@interface BasicCollectionViewDataSource : BasicArrayDataSource
+@class BasicCollectionViewAdapter;
 
+@interface BasicCollectionViewDataSource : BasicArrayDataSource
+@property (strong,nonatomic) BasicCollectionViewAdapter *adapter;
 @end

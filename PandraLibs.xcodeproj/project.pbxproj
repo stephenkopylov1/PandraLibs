@@ -12,6 +12,11 @@
 		4CA2D6101A2DFBBF00E21E08 /* BasicLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2D60F1A2DFBBF00E21E08 /* BasicLoadingCell.m */; };
 		4CD6E8921A1CFCAB000BBD5D /* BasicSharingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6E8911A1CFCAB000BBD5D /* BasicSharingManager.m */; };
 		845CFCB11A0FDC19000A1A60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CFCB01A0FDC19000A1A60 /* AppDelegate.m */; };
+		847095581A2F733A00B180D0 /* UIViewSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 847095571A2F733A00B180D0 /* UIViewSample.m */; };
+		8470955B1A2F744200B180D0 /* viewSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470955A1A2F744200B180D0 /* viewSample.m */; };
+		8470955E1A2F77DB00B180D0 /* viewDataSourceSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470955D1A2F77DB00B180D0 /* viewDataSourceSample.m */; };
+		847095611A2F77FB00B180D0 /* viewAdapterSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 847095601A2F77FB00B180D0 /* viewAdapterSample.m */; };
+		847095641A2F7EE900B180D0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 847095631A2F7EE900B180D0 /* User.m */; };
 		848C3DFE1A0FD419004C9699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3DFD1A0FD419004C9699 /* main.m */; };
 		848C3E0C1A0FD419004C9699 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C3E0B1A0FD419004C9699 /* Images.xcassets */; };
 		848C3E1B1A0FD419004C9699 /* PandraLibsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C3E1A1A0FD419004C9699 /* PandraLibsTests.m */; };
@@ -28,7 +33,6 @@
 		84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D31A0FE34A00BE6045 /* BasicCollectionView.m */; };
 		84C2A8F11A0FE34A00BE6045 /* BasicContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D51A0FE34A00BE6045 /* BasicContextManager.m */; };
 		84C2A8F21A0FE34A00BE6045 /* BasicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D71A0FE34A00BE6045 /* BasicDataSource.m */; };
-		84C2A8F31A0FE34A00BE6045 /* BasicDataSourceAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8D91A0FE34A00BE6045 /* BasicDataSourceAdapter.m */; };
 		84C2A8F41A0FE34A00BE6045 /* BasicLinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8DC1A0FE34A00BE6045 /* BasicLinker.m */; };
 		84C2A8F51A0FE34A00BE6045 /* BasicMTContextProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8DE1A0FE34A00BE6045 /* BasicMTContextProcessor.m */; };
 		84C2A8F61A0FE34A00BE6045 /* BasicPostprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2A8E01A0FE34A00BE6045 /* BasicPostprocessor.m */; };
@@ -65,6 +69,16 @@
 		653D76719830801E02024942 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		845CFCAF1A0FDC19000A1A60 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		845CFCB01A0FDC19000A1A60 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		847095561A2F733A00B180D0 /* UIViewSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewSample.h; path = PandraLibs/UIViewSample.h; sourceTree = "<group>"; };
+		847095571A2F733A00B180D0 /* UIViewSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewSample.m; path = PandraLibs/UIViewSample.m; sourceTree = "<group>"; };
+		847095591A2F744200B180D0 /* viewSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewSample.h; path = PandraLibs/viewSample.h; sourceTree = "<group>"; };
+		8470955A1A2F744200B180D0 /* viewSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = viewSample.m; path = PandraLibs/viewSample.m; sourceTree = "<group>"; };
+		8470955C1A2F77DB00B180D0 /* viewDataSourceSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewDataSourceSample.h; path = PandraLibs/viewDataSourceSample.h; sourceTree = "<group>"; };
+		8470955D1A2F77DB00B180D0 /* viewDataSourceSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = viewDataSourceSample.m; path = PandraLibs/viewDataSourceSample.m; sourceTree = "<group>"; };
+		8470955F1A2F77FB00B180D0 /* viewAdapterSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewAdapterSample.h; path = PandraLibs/viewAdapterSample.h; sourceTree = "<group>"; };
+		847095601A2F77FB00B180D0 /* viewAdapterSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = viewAdapterSample.m; path = PandraLibs/viewAdapterSample.m; sourceTree = "<group>"; };
+		847095621A2F7EE900B180D0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = PandraLibs/User.h; sourceTree = "<group>"; };
+		847095631A2F7EE900B180D0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = PandraLibs/User.m; sourceTree = "<group>"; };
 		848C3DF81A0FD419004C9699 /* PandraLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandraLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848C3DFC1A0FD419004C9699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848C3DFD1A0FD419004C9699 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,8 +115,6 @@
 		84C2A8D51A0FE34A00BE6045 /* BasicContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicContextManager.m; path = Classes/BasicContextManager.m; sourceTree = "<group>"; };
 		84C2A8D61A0FE34A00BE6045 /* BasicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicDataSource.h; path = Classes/BasicDataSource.h; sourceTree = "<group>"; };
 		84C2A8D71A0FE34A00BE6045 /* BasicDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicDataSource.m; path = Classes/BasicDataSource.m; sourceTree = "<group>"; };
-		84C2A8D81A0FE34A00BE6045 /* BasicDataSourceAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicDataSourceAdapter.h; path = Classes/BasicDataSourceAdapter.h; sourceTree = "<group>"; };
-		84C2A8D91A0FE34A00BE6045 /* BasicDataSourceAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicDataSourceAdapter.m; path = Classes/BasicDataSourceAdapter.m; sourceTree = "<group>"; };
 		84C2A8DA1A0FE34A00BE6045 /* BasicDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicDataSourceDelegate.h; path = Classes/BasicDataSourceDelegate.h; sourceTree = "<group>"; };
 		84C2A8DB1A0FE34A00BE6045 /* BasicLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicLinker.h; path = Classes/BasicLinker.h; sourceTree = "<group>"; };
 		84C2A8DC1A0FE34A00BE6045 /* BasicLinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicLinker.m; path = Classes/BasicLinker.m; sourceTree = "<group>"; };
@@ -226,6 +238,23 @@
 			name = utilits;
 			sourceTree = "<group>";
 		};
+		847095551A2F731600B180D0 /* UIViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				847095561A2F733A00B180D0 /* UIViewSample.h */,
+				847095571A2F733A00B180D0 /* UIViewSample.m */,
+				847095591A2F744200B180D0 /* viewSample.h */,
+				8470955A1A2F744200B180D0 /* viewSample.m */,
+				8470955C1A2F77DB00B180D0 /* viewDataSourceSample.h */,
+				8470955D1A2F77DB00B180D0 /* viewDataSourceSample.m */,
+				8470955F1A2F77FB00B180D0 /* viewAdapterSample.h */,
+				847095601A2F77FB00B180D0 /* viewAdapterSample.m */,
+				847095621A2F7EE900B180D0 /* User.h */,
+				847095631A2F7EE900B180D0 /* User.m */,
+			);
+			name = UIViewSample;
+			sourceTree = "<group>";
+		};
 		848C3DEF1A0FD419004C9699 = {
 			isa = PBXGroup;
 			children = (
@@ -304,8 +333,6 @@
 		849411921A2E564C006A70A5 /* adapters */ = {
 			isa = PBXGroup;
 			children = (
-				84C2A8D81A0FE34A00BE6045 /* BasicDataSourceAdapter.h */,
-				84C2A8D91A0FE34A00BE6045 /* BasicDataSourceAdapter.m */,
 				849411801A2E4D20006A70A5 /* BasicAdapter.h */,
 				849411811A2E4D20006A70A5 /* BasicAdapter.m */,
 				849411981A2E5B04006A70A5 /* BasicCollectionViewAdapter.h */,
@@ -342,6 +369,7 @@
 		849411A21A2E6111006A70A5 /* Develop */ = {
 			isa = PBXGroup;
 			children = (
+				847095551A2F731600B180D0 /* UIViewSample */,
 				8494119D1A2E5FE2006A70A5 /* PandraLibsVC.h */,
 				8494119E1A2E5FE2006A70A5 /* PandraLibsVC.m */,
 				849411A61A2E64CE006A70A5 /* CollectionViewSample */,
@@ -506,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847095641A2F7EE900B180D0 /* User.m in Sources */,
 				4C4D97681A10A8CC005FD0BE /* TD.m in Sources */,
 				4C4D97671A10A8C5005FD0BE /* TD.h in Sources */,
 				84F1AE371A0FFF70007CAA64 /* IP.m in Sources */,
@@ -513,15 +542,17 @@
 				84C2A8F21A0FE34A00BE6045 /* BasicDataSource.m in Sources */,
 				8494119F1A2E5FE2006A70A5 /* PandraLibsVC.m in Sources */,
 				84C2A8F41A0FE34A00BE6045 /* BasicLinker.m in Sources */,
-				84C2A8F31A0FE34A00BE6045 /* BasicDataSourceAdapter.m in Sources */,
+				8470955E1A2F77DB00B180D0 /* viewDataSourceSample.m in Sources */,
 				84C2A8F01A0FE34A00BE6045 /* BasicCollectionView.m in Sources */,
 				8494118B1A2E4F13006A70A5 /* BasicCollectionViewDataSource.m in Sources */,
 				84C2A8F51A0FE34A00BE6045 /* BasicMTContextProcessor.m in Sources */,
 				8494118E1A2E4FD5006A70A5 /* BasicView.m in Sources */,
 				84C2A8FB1A0FE34A00BE6045 /* DF.m in Sources */,
 				848C3DFE1A0FD419004C9699 /* main.m in Sources */,
+				847095581A2F733A00B180D0 /* UIViewSample.m in Sources */,
 				4CA2D6101A2DFBBF00E21E08 /* BasicLoadingCell.m in Sources */,
 				84C2A8FA1A0FE34A00BE6045 /* BasicCoredataManager.m in Sources */,
+				8470955B1A2F744200B180D0 /* viewSample.m in Sources */,
 				849411AF1A2E689A006A70A5 /* cvCellSample.m in Sources */,
 				84C2A8F81A0FE34A00BE6045 /* BasicSyncer.m in Sources */,
 				84C2A9031A0FEAF700BE6045 /* BasicProcessor.m in Sources */,
@@ -532,6 +563,7 @@
 				84C2A8FC1A0FE34A00BE6045 /* MT.m in Sources */,
 				84C2A8F91A0FE34A00BE6045 /* CC.m in Sources */,
 				84C2A8F71A0FE34A00BE6045 /* BasicSaver.m in Sources */,
+				847095611A2F77FB00B180D0 /* viewAdapterSample.m in Sources */,
 				849411821A2E4D20006A70A5 /* BasicAdapter.m in Sources */,
 				849411A51A2E6469006A70A5 /* CollectionViewSample.m in Sources */,
 				84C2A8F61A0FE34A00BE6045 /* BasicPostprocessor.m in Sources */,

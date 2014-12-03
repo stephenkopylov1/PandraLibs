@@ -10,8 +10,12 @@
 
 @implementation BasicAdapter
 @synthesize basicDataSource;
-@synthesize view;
 -(void)registerView:(id)view{
- 
+    self.view = (UIView*)view;
+    [self setup];
+}
+
+-(void)setup{
+    
 }
 @end

@@ -16,6 +16,7 @@
 }
 
 -(BasicAdapter *)getAdapter{
+
     return [[cvAdapterSample alloc] init];
 }
 

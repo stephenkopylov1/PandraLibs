@@ -11,6 +11,13 @@
 @class BasicDataSource;
 
 @protocol BasicViewProtocol <NSObject>
+
 -(instancetype) initWithDataSource:(BasicDataSource*)dataSource;
+
+-(void)setup;
+
 @property (strong,nonatomic) BasicDataSource* basicDataSource;
+
+
+
 @end
