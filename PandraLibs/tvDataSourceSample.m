@@ -7,7 +7,20 @@
 //
 
 #import "tvDataSourceSample.h"
+#import "tvAdapterSample.h"
 
 @implementation tvDataSourceSample
+-(void)setup{
+    [self setCurrentData:[[NSMutableArray alloc] initWithObjects:@"1",@"2", nil]];
+}
+
+-(BasicAdapter *)getAdapter{
+    
+    return [[tvAdapterSample alloc] init];
+}
+
+-(void)refreshData{
+    [self setCurrentData:[[NSMutableArray alloc] initWithObjects:@"1",@"2", @"3", nil]];
+}
 
 @end

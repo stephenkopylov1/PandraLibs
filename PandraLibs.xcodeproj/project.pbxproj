@@ -17,6 +17,7 @@
 		842925511A2F91F3001A40F1 /* BasicLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842925501A2F91F3001A40F1 /* BasicLoadingTableViewCell.m */; };
 		842925541A2F9427001A40F1 /* BasicTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 842925531A2F9427001A40F1 /* BasicTableViewDataSource.m */; };
 		842925571A2F9433001A40F1 /* BasicTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842925551A2F9433001A40F1 /* BasicTableView.m */; };
+		8429255A1A2F95E9001A40F1 /* tvAdapterSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 842925591A2F95E9001A40F1 /* tvAdapterSample.m */; };
 		845CFCB11A0FDC19000A1A60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CFCB01A0FDC19000A1A60 /* AppDelegate.m */; };
 		847095581A2F733A00B180D0 /* UIViewSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 847095571A2F733A00B180D0 /* UIViewSample.m */; };
 		8470955B1A2F744200B180D0 /* viewSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 8470955A1A2F744200B180D0 /* viewSample.m */; };
@@ -85,6 +86,8 @@
 		842925531A2F9427001A40F1 /* BasicTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicTableViewDataSource.m; path = Classes/BasicTableViewDataSource.m; sourceTree = "<group>"; };
 		842925551A2F9433001A40F1 /* BasicTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicTableView.m; path = Classes/BasicTableView.m; sourceTree = "<group>"; };
 		842925561A2F9433001A40F1 /* BasicTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicTableView.h; path = Classes/BasicTableView.h; sourceTree = "<group>"; };
+		842925581A2F95E9001A40F1 /* tvAdapterSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tvAdapterSample.h; path = PandraLibs/tvAdapterSample.h; sourceTree = "<group>"; };
+		842925591A2F95E9001A40F1 /* tvAdapterSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tvAdapterSample.m; path = PandraLibs/tvAdapterSample.m; sourceTree = "<group>"; };
 		845CFCAF1A0FDC19000A1A60 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		845CFCB01A0FDC19000A1A60 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		847095561A2F733A00B180D0 /* UIViewSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewSample.h; path = PandraLibs/UIViewSample.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				842925411A2F8555001A40F1 /* TableViewSample.m */,
 				8429254C1A2F8976001A40F1 /* tvDataSourceSample.h */,
 				8429254D1A2F8976001A40F1 /* tvDataSourceSample.m */,
+				842925581A2F95E9001A40F1 /* tvAdapterSample.h */,
+				842925591A2F95E9001A40F1 /* tvAdapterSample.m */,
 			);
 			name = TableViewSample;
 			sourceTree = "<group>";
@@ -601,6 +606,7 @@
 				849411A91A2E64FC006A70A5 /* cvAdapterSample.m in Sources */,
 				845CFCB11A0FDC19000A1A60 /* AppDelegate.m in Sources */,
 				849411AC1A2E6520006A70A5 /* cvDataSourceSample.m in Sources */,
+				8429255A1A2F95E9001A40F1 /* tvAdapterSample.m in Sources */,
 				842925571A2F9433001A40F1 /* BasicTableView.m in Sources */,
 				84C2A8FC1A0FE34A00BE6045 /* MT.m in Sources */,
 				84C2A8F91A0FE34A00BE6045 /* CC.m in Sources */,
