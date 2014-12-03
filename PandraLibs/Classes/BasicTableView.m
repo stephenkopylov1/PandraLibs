@@ -1,23 +1,23 @@
 //
-//  BasicCollectionView.m
-//  Piquadro
+//  BasicTableView.m
+//  PandraLibs
 //
-//  Created by Stephen Kopylov on 07/11/14.
+//  Created by Admin on 03.12.14.
 //  Copyright (c) 2014 Pandra. All rights reserved.
 //
 
-#import "BasicCollectionView.h"
+#import "BasicTableView.h"
 #import "BasicDataSource.h"
-#import "BasicCollectionViewDataSource.h"
+#import "BasicTableViewDataSource.h"
 
-@implementation BasicCollectionView{
-    
-}
+
+@implementation BasicTableView
+
 @synthesize basicDataSource;
 
 -(instancetype)initWithDataSource:(BasicDataSource *)dataSource{
-    self.basicDataSource = (BasicCollectionViewDataSource*)dataSource;
-    return [super initWithFrame:CGRectMake(0, 0, 0, 0) collectionViewLayout:[self getFlowLayout]];
+    self.basicDataSource = (BasicTableViewDataSource*)dataSource;
+    return [super init];
 }
 -(void)didMoveToSuperview{
     if(self.refreshEnabled){
@@ -32,7 +32,4 @@
     return flowLaout;
 }
 
--(void)setup{
-    
-}
 @end

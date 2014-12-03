@@ -11,5 +11,7 @@
 @class BasicCollectionViewAdapter;
 
 @interface BasicCollectionViewDataSource : BasicArrayDataSource
+
 @property (strong,nonatomic) BasicCollectionViewAdapter *adapter;
+
 @end

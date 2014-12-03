@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import "CollectionViewSample.h"
 #import "UIViewSample.h"
+#import "TableViewSample.h"
 
 @implementation PandraLibsVC{
     UIButton *lastButton;
@@ -27,6 +28,11 @@
     [button2 setTitle:@"uiView" forState:UIControlStateNormal];
     [button2 addTarget:self action:@selector(uiViewSample) forControlEvents:UIControlEventTouchUpInside];
     [self addButton:button2];
+    
+    UIButton *button3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button3 setTitle:@"tableVIew" forState:UIControlStateNormal];
+    [button3 addTarget:self action:@selector(tableViewSample) forControlEvents:UIControlEventTouchUpInside];
+    [self addButton:button3];
 }
 
 -(void)addButton:(UIButton*)button{
@@ -56,5 +62,9 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+-(void)tableViewSample{
+    TableViewSample *vc = [[TableViewSample alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
