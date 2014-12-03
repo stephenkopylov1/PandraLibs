@@ -11,6 +11,5 @@
 #import "BasicDataSourceProtocol.h"
 
 @interface BasicDataSource : NSObject<BasicDataSourceProtocol>
-
-
+@property (readwrite) BOOL loading;
 @end
