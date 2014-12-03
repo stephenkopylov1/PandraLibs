@@ -12,6 +12,7 @@
 
 @synthesize adapter;
 @synthesize delegate;
+@synthesize data;
 
 -(void)registerView:(id)view{
     if(adapter==nil){
@@ -20,6 +21,11 @@
     adapter.basicDataSource = self;
     [adapter registerView:view];
     self.delegate = self.adapter;
+    [self setup];
+}
+
+-(void)setup{
+    
 }
  
 -(BasicAdapter*)getAdapter{
@@ -33,6 +39,13 @@
 
 -(void)loadMore{
     
+}
+
+-(void)setCurrentData:(id)data{
+    self.data = data;
+    if(self.delegate !=nil && [self.delegate respondsToSelector:@selector(dataChanged:)]){
+        [self.delegate dataChanged:self.data];
+    }
 }
 
 @end

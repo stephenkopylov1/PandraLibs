@@ -9,5 +9,6 @@
 #import "BasicDataSource.h"
 
 @interface BasicArrayDataSource : BasicDataSource
-
+@property (strong ,nonatomic) NSMutableArray *data;
+-(void)setCurrentData:(NSMutableArray*)data;
 @end

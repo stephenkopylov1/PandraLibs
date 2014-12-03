@@ -10,7 +10,13 @@
 #import "cvAdapterSample.h"
 
 @implementation cvDataSourceSample
+
+-(void)setup{
+    self.data = [[NSMutableArray alloc] initWithObjects:@"1",@"2", nil];
+}
+
 -(BasicAdapter *)getAdapter{
     return [[cvAdapterSample alloc] init];
 }
+
 @end

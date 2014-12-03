@@ -14,6 +14,8 @@
 
 -(void)setCurrentData:(id)data;
 
+-(void)setup;
+
 -(void)refreshData;
 
 -(void)loadMore;

@@ -9,6 +9,7 @@
 #import "BasicAdapter.h"
 #import <UIKit/UIKit.h>
 #import "BasicCollectionView.h"
+#import "BasicCollectionViewDataSource.h"
 
 @class BasicCollectionViewDataSource;
 
@@ -21,5 +22,7 @@
 - (CGSize)sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @property (strong , nonatomic) BasicCollectionView *view;
+
+@property (strong,nonatomic) BasicCollectionViewDataSource *basicDataSource;
 
 @end

@@ -17,7 +17,7 @@
 }
 
 -(NSInteger)numberOfItemsInSection:(NSInteger)section{
-    return 2;
+    return self.basicDataSource.data.count;
 }
 -(UICollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     cvCellSample *cell = [self.view dequeueReusableCellWithReuseIdentifier:@"sampleCell" forIndexPath:indexPath];
