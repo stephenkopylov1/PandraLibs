@@ -10,13 +10,18 @@
 #import "viewAdapterSample.h"
 
 
-@implementation viewDataSourceSample
+@implementation viewDataSourceSample{
+    User *testUser;
+}
 -(BasicAdapter *)getAdapter{
-    NSLog(@"getAdapter");
     return [[viewAdapterSample alloc] init];
 }
 -(void)setup{
-    User *testUser = [[User alloc] init];
+    testUser = [[User alloc] init];
+    [self regenerateData];
+}
+-(void)regenerateData{
+    testUser.username = [NSString stringWithFormat:@"User %d",rand()];
     [self setCurrentData:testUser];
 }
 @end

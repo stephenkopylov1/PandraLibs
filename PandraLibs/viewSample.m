@@ -28,5 +28,12 @@
         make.top.equalTo(self.sampleImage.mas_bottom);
         make.centerX.equalTo(self.sampleImage);
     }];
+    
+    self.sampleButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    [self addSubview:self.sampleButton];
+    [self.sampleButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.sampleLabel.mas_bottom);
+        make.centerX.equalTo(self.sampleLabel);
+    }];
 }
 @end

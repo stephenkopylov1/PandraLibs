@@ -11,4 +11,5 @@
 @interface viewSample : BasicView
 @property (strong,nonatomic) UIImageView *sampleImage;
 @property (strong,nonatomic) UILabel *sampleLabel;
+@property (strong,nonatomic) UIButton *sampleButton;
 @end

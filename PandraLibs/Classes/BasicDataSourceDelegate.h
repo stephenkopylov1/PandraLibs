@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 @class BasicDataSource;
 @protocol BasicDataSourceDelegate <NSObject>
--(void)dataChanged:(NSMutableArray*)newData;
+-(void)dataChanged:(id)newData;
 @end

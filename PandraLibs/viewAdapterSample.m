@@ -7,11 +7,21 @@
 //
 
 #import "viewAdapterSample.h"
+#import "User.h"
 
 @implementation viewAdapterSample
 
 -(void)setup{
-    self.view.sampleLabel.text = @"test";
+    [self.view.sampleButton addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)buttonClick{
+    NSLog(@"buttonClicked");
+    [self.basicDataSource regenerateData];
+}
+
+-(void)dataChanged:(id)newData{
+    self.view.sampleLabel.text =  self.basicDataSource.data.username;
 }
 
 @end

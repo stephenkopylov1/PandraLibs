@@ -11,4 +11,5 @@
 
 @interface viewDataSourceSample : BasicDataSource
 @property (strong ,nonatomic) User *data;
+-(void)regenerateData;
 @end

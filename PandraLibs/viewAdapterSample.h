@@ -8,7 +8,9 @@
 
 #import "BasicAdapter.h"
 #import "viewSample.h"
+#import "viewDataSourceSample.h"
 
 @interface viewAdapterSample : BasicAdapter
 @property (strong , nonatomic) viewSample *view;
+@property (strong,nonatomic) viewDataSourceSample *basicDataSource;
 @end
