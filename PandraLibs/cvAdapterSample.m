@@ -28,7 +28,8 @@
     return  CGSizeMake(50, 50);
 }
 -(void)dataChanged:(NSMutableArray *)newData{
-    
+    [super dataChanged:newData];
+    [self.view reloadData];
 }
 
 @end

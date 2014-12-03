@@ -70,4 +70,10 @@
     return CGSizeMake(0, 0);
 }
 
+-(void)dataChanged:(NSMutableArray *)newData{
+    if(self.view.refreshEnabled){
+        [self.view.refreshControl endRefreshing];
+    }
+}
+
 @end

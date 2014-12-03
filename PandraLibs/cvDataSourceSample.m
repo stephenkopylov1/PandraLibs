@@ -12,11 +12,15 @@
 @implementation cvDataSourceSample
 
 -(void)setup{
-    self.data = [[NSMutableArray alloc] initWithObjects:@"1",@"2", nil];
+    [self setCurrentData:[[NSMutableArray alloc] initWithObjects:@"1",@"2", nil]];
 }
 
 -(BasicAdapter *)getAdapter{
     return [[cvAdapterSample alloc] init];
+}
+
+-(void)refreshData{
+    [self setCurrentData:[[NSMutableArray alloc] initWithObjects:@"1",@"2", @"3", nil]];
 }
 
 @end
