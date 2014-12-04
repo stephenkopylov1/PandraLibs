@@ -11,7 +11,7 @@
 #import "BasicCollectionViewDataSource.h"
 
 @implementation BasicCollectionView{
-    
+    BOOL layouted;
 }
 @synthesize basicDataSource;
 
@@ -25,7 +25,6 @@
         self.refreshControl.tintColor = [UIColor grayColor];
         [self addSubview:self.refreshControl];
     }
-    [self.basicDataSource registerView:self];
 }
 -(UICollectionViewFlowLayout *)getFlowLayout{
     UICollectionViewFlowLayout *flowLaout = [[UICollectionViewFlowLayout alloc] init];
@@ -34,5 +33,13 @@
 
 -(void)setup{
     
+}
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    if(!layouted){
+        layouted =TRUE;
+        [self.basicDataSource registerView:self];
+    }
 }
 @end

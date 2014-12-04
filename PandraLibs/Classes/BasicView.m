@@ -9,7 +9,9 @@
 #import "BasicView.h"
 #import "BasicDataSource.h"
 
-@implementation BasicView
+@implementation BasicView{
+        BOOL layouted;
+}
 
 -(instancetype)initWithDataSource:(BasicDataSource *)dataSource{
     NSLog(@"initWithDataSource");
@@ -23,7 +25,14 @@
 
 -(void)didMoveToSuperview{
     [self setup];
-    [self.basicDataSource registerView:self];
+}
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    if(!layouted){
+        layouted =TRUE;
+        [self.basicDataSource registerView:self];
+    }
 }
 
 @end

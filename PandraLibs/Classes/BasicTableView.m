@@ -11,7 +11,9 @@
 #import "BasicTableViewDataSource.h"
 
 
-@implementation BasicTableView
+@implementation BasicTableView{
+    BOOL layouted;
+}
 
 @synthesize basicDataSource;
 
@@ -25,11 +27,22 @@
         self.refreshControl.tintColor = [UIColor grayColor];
         [self addSubview:self.refreshControl];
     }
-    [self.basicDataSource registerView:self];
 }
 -(UICollectionViewFlowLayout *)getFlowLayout{
     UICollectionViewFlowLayout *flowLaout = [[UICollectionViewFlowLayout alloc] init];
     return flowLaout;
+}
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    if(!layouted){
+        layouted =TRUE;
+        [self.basicDataSource registerView:self];
+    }
+}
+
+-(void)setup{
+    
 }
 
 @end
