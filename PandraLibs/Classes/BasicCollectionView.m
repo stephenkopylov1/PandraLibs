@@ -40,6 +40,7 @@
     if(!layouted){
         layouted =TRUE;
         [self.basicDataSource registerView:self];
+         [self setup];
     }
 }
 @end

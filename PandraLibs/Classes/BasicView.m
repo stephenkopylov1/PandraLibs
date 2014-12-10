@@ -10,7 +10,7 @@
 #import "BasicDataSource.h"
 
 @implementation BasicView{
-        BOOL layouted;
+    BOOL layouted;
 }
 
 -(instancetype)initWithDataSource:(BasicDataSource *)dataSource{
@@ -24,7 +24,6 @@
 }
 
 -(void)didMoveToSuperview{
-    [self setup];
 }
 
 -(void)layoutSubviews{
@@ -32,6 +31,7 @@
     if(!layouted){
         layouted =TRUE;
         [self.basicDataSource registerView:self];
+        [self setup];
     }
 }
 
