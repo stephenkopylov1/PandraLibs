@@ -37,8 +37,8 @@
     [super layoutSubviews];
     if(!layouted){
         layouted =TRUE;
-        [self.basicDataSource registerView:self];
         [self setup];
+        [self.basicDataSource registerView:self];
     }
 }
 
